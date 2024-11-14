@@ -1,0 +1,444 @@
+body {
+  background-color: #1b2021;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  padding: 5px 10px;
+}
+
+h2 {
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: auto;
+}
+
+h5 {
+  margin: 10px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace, "Lucida Console", "Courier New";
+  width: auto;
+}
+
+h6 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: auto;
+  padding: 0px 5px;
+  font-size: 14px;
+}
+
+.header {
+  position: relative;
+  background-color: #fff9ec;
+  border-radius: 5px;
+  border: 5px solid #c5d86d;
+  text-align: center;
+  padding: 0 0 20px 0;
+  margin: 0 auto 20px auto;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: -105px;
+  /* Position the tail below the callout */
+  left: 60px;
+  border-width: 55px 15px 50px 10px;
+  border-style: solid;
+  border-color: #c5d86d transparent transparent transparent;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  height: 55px;
+  padding: 15px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #c5d86d;
+  text-align: bottom;
+  padding: 10px 30px 10px 10px;
+  margin: 5px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 12px;
+    padding: 3px 8px;
+    margin: 2px;
+  }
+}
+
+.navbar a:hover {
+  background: linear-gradient(to left, #c5d86d, #1b998b);
+  height: 20px;
+  padding-bottom: 30px;
+  margin-top: 5px;
+  width: 55px;
+  color: #fff9ec;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .navbar a:hover {
+    background: none;
+    font-size: 12px;
+  }
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+.title {
+  margin: 100px auto 0px auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/*this is the start of the About Me section with the profile pic, text etc*/
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  height: auto;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+@keyframes grow {
+  30% {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 350px) {
+  @keyframes grow {
+    20% {
+      transform: scale(20%);
+    }
+  }
+}
+
+.profile-photo {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
+  width: 200px;
+  height: 200px;
+  background-size: 300%;
+  background-position-x: 200%;
+  animation: shimmer 4s infinite linear;
+  padding: 5px;
+  margin: 40px 0px 10px 10px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 30%;
+  }
+}
+
+.profile-photo:hover {
+  background: linear-gradient(45deg, #1b998b 20%, #c5d86d 50%, #1b998b 60%);
+}
+
+.profile-text {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%);
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: left;
+  font-weight: bold;
+  padding: 20px 20px 40px 20px;
+  margin: 40px;
+  height: auto;
+  width: 83%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  animation: grow 2.5s 2s 1;
+}
+
+@media (max-width: 480px) {
+  .profile-text {
+    padding: 20px 20px;
+    margin: 10px auto;
+    width: 75%;
+  }
+}
+
+.social-icons {
+  border-radius: 150px;
+  border: 3px solid #c5d86d;
+  margin: auto;
+}
+
+/*This is the start of the content sections.*/
+
+.grid-background-2 { /*This is the start of the social proof section.*/
+  background-color: #fff9ec;
+  padding: 50px 0;
+  margin: 25px auto;
+  width: 85%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+}
+
+.grid-container-2 {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.project-tile {
+  margin: auto;
+}
+
+.quote-card {
+  background: transparent;
+  max-width: 75vw;
+  width: 80vw;
+  height: auto;
+  border: 0px solid #f1f1f1;
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.quote-card-front {
+  background: linear-gradient(to right, #c5d86d, #1b998b);
+  color: black;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 3px 30px 3px 3px;
+  width: 93%;
+  height: 85%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .quote-card-front {
+    width: 90%;
+    height: auto;
+    padding: 3px 20px 3px 3px;
+  }
+}
+
+.quote-card-inner {
+  position: sticky;
+  top: 0;
+  background: #fff9ec;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .quote-card-inner {
+    width: 95%;
+    height: auto;
+    color: black;
+    text-align: left;
+  }
+}
+/* this is the beginning of the projects section for data analysis, html/css, and javascript */
+.grid-background-1 {
+  background-color: #fff9ec;
+  padding: 50px 0;
+  margin: 25px auto;
+  width: 90%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+}
+
+.grid-container-1 {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-row-gap: 150px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 10px auto;
+  margin-bottom: 6rem;
+}
+
+.project-img {
+  margin: auto;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+iframe {
+  margin: auto;
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
+}
+
+.flip-card {
+  background: transparent;
+  width: 300px;
+  height: 300px;
+  border: none;
+  perspective: 1000px;
+}
+
+/*Add media query for mobile. This centers the whole flip card within grid-container-1*/
+@media (max-width: 480px) {
+  .flip-card {
+    margin-right: 20px;
+  }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background: linear-gradient(to right, #c5d86d, #1b998b);
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+  padding: 5px;
+  height: 300px;
+  width: 300px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: linear-gradient(to right, #c5d86d, #1b998b);
+  color: #fff9ec;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  height: 300px;
+  width: 300px;
+  font-family: sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.flip-card-back h1 {
+  padding-top: 55px;
+}
+
+.project-link {
+  text-decoration: none;
+  background-color: #fff9ec;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 5px solid #1b998b;
+  margin-top: 20px;
+  color: black;
+}
+
+.project-link:hover {
+  background: #c5d86d;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 5px solid #fff9ec;
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .project-link:hover {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+  }
+}
+
+.grid-background-3 {
+  background-color: #fff9ec;
+  padding: 20px 0;
+  margin: 25px auto;
+  width: 90%;
+  height: 200px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+}
+
+.footer-text {
+  text-align: left;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: auto;
+  height: 50vh;
+  padding: 10px 20px 40px 20px;
+}
+
+.footer-text-1 {
+  text-align: left;
+  font-family: "Lucida Console", "Courier New", monospace;
+  width: auto;
+  color: white;
+  padding: 15px 40px;
+  margin: auto;
+}
