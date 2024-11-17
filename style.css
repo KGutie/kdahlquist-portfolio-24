@@ -15,7 +15,7 @@ p {
 }
 
 h2 {
-  margin: 10px 20px;
+  margin: 10px;
   padding: 10px;
   border-radius: 5px;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -37,27 +37,15 @@ h6 {
   font-size: 14px;
 }
 
-.header {
-  position: relative;
-  background-color: #fff9ec;
-  border-radius: 5px;
-  border: 5px solid #c5d86d;
+li {
+  text-decoration: none;
+  list-style: none;
   text-align: center;
-  padding: 0 0 20px 0;
-  margin: 0 auto 20px auto;
-  width: 300px;
-  font-family: Arial, sans-serif;
-  color: #333;
 }
-.header::after {
-  content: "";
-  position: absolute;
-  bottom: -105px;
-  /* Position the tail below the callout */
-  left: 60px;
-  border-width: 55px 15px 50px 10px;
-  border-style: solid;
-  border-color: #c5d86d transparent transparent transparent;
+
+.title {
+  margin: 100px auto 0px auto;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
 
 .navbar {
@@ -112,15 +100,28 @@ h6 {
   }
 }
 
-li {
-  text-decoration: none;
-  list-style: none;
+.callout {
+  position: relative;
+  background-color: #fff9ec;
+  border-radius: 5px;
+  border: 5px solid #c5d86d;
   text-align: center;
+  padding: 0 0 20px 0;
+  margin: 0 auto 20px auto;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-.title {
-  margin: 100px auto 0px auto;
-  font-family: "Lucida Console", "Courier New", monospace;
+.callout::after {
+  content: "";
+  position: absolute;
+  bottom: -105px;
+  /* Position the tail below the callout */
+  left: 60px;
+  border-width: 55px 15px 50px 10px;
+  border-style: solid;
+  border-color: #c5d86d transparent transparent transparent;
 }
 
 /*this is the start of the About Me section with the profile pic, text etc*/
@@ -133,6 +134,69 @@ li {
   margin: 20px 0;
   height: auto;
   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.profile-photo {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
+  width: 200px;
+  height: 200px;
+  background-size: 300%;
+  background-position-x: 200%;
+  animation: shimmer 4s infinite linear;
+  padding: 5px;
+  margin: 45px 10px 20px 10px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 40%;
+  }
+}
+
+.profile-photo:hover {
+  background: linear-gradient(45deg, #1b998b 20%, #c5d86d 50%, #1b998b 60%);
+}
+
+/*This is the container for the content inside of hello-2 div*/
+.kd-container {
+  display: flex;
+  flex-direction: row;
+  animation: grow 2.5s 2s 1;
+}
+/*This is the content inside of hello div*/
+.kd-content {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
+  width: 400px;
+  height: 200px;
+  padding: 5px;
+  margin: 45px 10px 20px 10px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.social-icons {
+  border-radius: 150px;
+  border: 3px solid #c5d86d;
+  margin-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media (max-width: 480px) {
+  .kd-container {
+    display: flex;
+    flex-direction: column;
+    animation: none;
+    margin: 10px;
+  }
 }
 
 @keyframes grow {
@@ -149,61 +213,17 @@ li {
   }
 }
 
-.profile-photo {
-  border-radius: 5px;
-  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
-  width: 200px;
-  height: 200px;
-  background-size: 300%;
-  background-position-x: 200%;
-  animation: shimmer 4s infinite linear;
-  padding: 5px;
-  margin: 45px 20px 20px 10px;
-  z-index: 1;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-#profile-icons {
-  background: none;
-  box-shadow: none;
-}
-
-@keyframes shimmer {
-  to {
-    background-position: 40%;
-  }
-}
-
-.profile-photo:hover {
-  background: linear-gradient(45deg, #1b998b 20%, #c5d86d 50%, #1b998b 60%);
-}
-
 @media (max-width: 480px) {
-  #profile-icons {
-    display: none;
+  .kd-content {
+    margin: 10px;
+    width: 82%;
+    padding: 20px 25px;
+    height: auto;
+    background: #fff9ec;
   }
 }
 
-.profile-text {
-  display: flexbox;
-  flex-direction: column;
-  justify-content: space-evenly;
-  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%);
-  text-align: left;
-  font-weight: bold;
-  padding: 20px 20px 10px 20px;
-  margin: 20px 40px 10px 40px;
-  height: auto;
-  width: 87%;
-  border-radius: 5px;
-  border: none;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  animation: grow 2.5s 2s 1;
-}
-
-.skills {
+.skills-container {
   display: flexbox;
   flex-direction: row;
   justify-content: space-evenly;
@@ -211,48 +231,69 @@ li {
   font-family: "Lucida Console", "Courier New", monospace;
   text-align: center;
   font-weight: bold;
-  padding: 10px 20px 10px 20px;
-  margin: auto;
+  padding: 50px;
+  margin: 25px auto;
+  width: 80vw;
   height: auto;
-  width: 87%;
   border-radius: 5px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-
-#skills-1 {
+/* List of skills styling*/
+#skills {
   display: inline-block;
   background: #fff9ec;
   width: 185px;
   border-radius: 5px;
   padding: 5px 10px;
   margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 @media (max-width: 480px) {
   .profile-text,
-  .skills {
+  .skills-container {
     padding: 20px 20px;
     margin: 10px auto;
     width: 82%;
   }
 }
 
-.social-icons {
-  border-radius: 150px;
-  border: 3px solid #c5d86d;
-  margin: auto;
+/*This is the start of the content sections.*/
+
+/*This is the start of the about me section.*/
+.grid-background-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #fff9ec;
+  padding: 50px;
+  margin: 20px auto;
+  width: 80vw;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
 }
 
-/*This is the start of the content sections.*/
+#about-me-text {
+  text-align: left;
+}
+
+@media (max-width: 480px) {
+  .grid-background-3 {
+    width: 68vw;
+  }
+}
 
 .grid-background-2 {
   /*This is the start of the social proof section.*/
   background-color: #fff9ec;
   padding: 50px 0;
-  margin: 25px auto;
-  width: 90%;
+  margin: 20px auto;
+  width: 85vw;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -282,6 +323,20 @@ li {
   margin: 20px;
 }
 
+#about-me-quote-card {
+  background: linear-gradient(to right, #c5d86d, #1b998b);
+  color: black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 80vw;
+  height: 85%;
+  margin-left: -35px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
 .quote-card-front {
   background: linear-gradient(to right, #c5d86d, #1b998b);
   color: black;
@@ -298,7 +353,8 @@ li {
 
 /*Add media query for mobile. */
 @media (max-width: 480px) {
-  .quote-card-front {
+  .quote-card-front,
+  #about-me-quote-card {
     width: 90%;
     height: auto;
     padding: 3px 20px 3px 3px;
@@ -330,8 +386,8 @@ li {
 .grid-background-1 {
   background-color: #fff9ec;
   padding: 50px 0;
-  margin: 25px auto;
-  width: 90%;
+  margin: 20px auto;
+  width: 85vw;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -454,17 +510,6 @@ iframe {
     height: 250px;
     padding: 10px;
   }
-}
-
-.grid-background-3 {
-  background-color: #fff9ec;
-  padding: 20px 0;
-  margin: 25px auto;
-  width: 90%;
-  height: 200px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 5px;
 }
 
 .footer-text {
