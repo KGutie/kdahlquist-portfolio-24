@@ -181,15 +181,42 @@ li {
   font-family: "Lucida Console", "Courier New", monospace;
   text-align: left;
   font-weight: bold;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 10px 20px;
   margin: 40px;
   height: auto;
-  width: 83%;
+  width: 85%;
   border-radius: 5px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   animation: grow 2.5s 2s 1;
+}
+
+.skills {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: linear-gradient(45deg, #1b998b 20%, #c5d86d 50%);
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  margin: 10px 40px 40px 40px;
+  height: auto;
+  width: 85%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#skills-1 {
+  display: inline-block;
+  background: white;
+  width: 185px;
+  border-radius: 5px; 
+  padding: 5px 10px;
+  margin: 10px;
 }
 
 @media (max-width: 480px) {
@@ -297,16 +324,6 @@ li {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 5px;
 }
-
-/*.grid-container-1 {
-  display: inline-grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-row-gap: 150px;
-  width: 100%;
-  max-width: 1280px;
-  margin: 10px auto;
-  margin-bottom: 6rem;
-} */
 
 .grid-container-1 { 
   display: flex;
