@@ -136,7 +136,7 @@ li {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.profile-photo {
+.profile-photo-frame {
   border-radius: 5px;
   background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
   width: 200px;
@@ -151,16 +151,26 @@ li {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
+.profile-photo {
+  background-image: url("https://i.ibb.co/rQXdvC7/DSC-0196.jpg"); /*intial background image */
+  height: 195px;
+  width: 195px;
+  padding-top: 3px;
+  background-size: cover;
+  border-radius: 5px;
+  margin: auto;
+  transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.profile-photo:hover {
+  background-image: url("https://i.postimg.cc/SsF1Cg4W/8bit-me-favicon-full-size.png");
+}
+
 @keyframes shimmer {
   to {
     background-position: 40%;
   }
 }
-
-.profile-photo:hover {
-  background: linear-gradient(45deg, #1b998b 20%, #c5d86d 50%, #1b998b 60%);
-}
-
 /*This is the container for the content inside of hello-2 div*/
 .kd-container {
   display: flex;
