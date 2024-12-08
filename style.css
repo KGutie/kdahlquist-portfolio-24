@@ -20,6 +20,18 @@ h2 {
   border-radius: 5px;
   font-family: "Lucida Console", "Courier New", monospace;
   width: auto;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#role {
+  margin: -20px 0px 0px 20px;
+  padding: 0px;
+  border-radius: none;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 h5 {
