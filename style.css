@@ -1,7 +1,10 @@
 body {
-  background-color: #1b2021;
+  background-color: #fff9ec;
   width: 100%;
   height: 100%;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 a {
@@ -9,16 +12,22 @@ a {
   color: black;
 }
 
-p {
+p,
+h3 {
   padding: 5px 10px;
-  font-family: Arial, sans-serif;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h2 {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
   width: auto;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -28,8 +37,11 @@ h2 {
   margin: -20px 0px 0px 20px;
   padding: 0px;
   border-radius: none;
-  font-family: Arial, sans-serif;
-  color: white;
+  font-family: "Amatic SC", serif;
+  font-weight: 500;
+  font-size: 30px;
+  font-style: normal;
+  color: #fff9ec;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -38,12 +50,16 @@ h5 {
   margin: 10px 20px;
   padding: 10px;
   border-radius: 5px;
-  font-family: Arial, sans-serif;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   width: auto;
 }
 
 h6 {
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   width: auto;
   padding: 0px 5px;
   font-size: 14px;
@@ -57,12 +73,15 @@ li {
 
 .title {
   margin: 100px auto 0px auto;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Amatic SC", serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: black;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
   height: 55px;
   padding: 15px;
   width: 100%;
@@ -78,7 +97,9 @@ li {
   color: #c5d86d;
   text-align: bottom;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin: 5px 10px;
 }
 
@@ -92,14 +113,16 @@ li {
 }
 
 .navbar a:hover {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
   height: 20px;
   margin-top: 5px;
-  padding: 15px 8px 30px 8px;
   width: auto;
   color: #fff9ec;
   border-radius: 5px;
   text-align: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #1b998b;
+  text-underline-offset: 5px;
 }
 
 /*Add media query for mobile. */
@@ -116,12 +139,11 @@ li {
   position: relative;
   background-color: #fff9ec;
   border-radius: 5px;
-  border: 5px solid #c5d86d;
+  border: 5px solid #1b998b;
   text-align: center;
   padding: 0 0 20px 0;
   margin: 0 auto 20px auto;
   width: 300px;
-  font-family: Arial, sans-serif;
   color: #333;
 }
 
@@ -133,44 +155,80 @@ li {
   left: 60px;
   border-width: 55px 15px 50px 10px;
   border-style: solid;
-  border-color: #c5d86d transparent transparent transparent;
+  border-color: #1b998b transparent transparent transparent;
 }
 
 /*this is the start of the About Me section with the profile pic, text etc*/
-.welcome-section {
+/*This is the container for the content content and profile pic divs*/
+.kd-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: space-between;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 20px 0;
+  padding: 0px;
+  margin: 25px 10px 0px 10px;
+  width: 90vw;
   height: auto;
-  font-family: "Lucida Console", "Courier New", monospace;
+  margin: 0px;
 }
-
-.profile-photo-frame {
+.profile-photo-frame-1 {
   border-radius: 5px;
   background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
-  width: 200px;
-  height: 200px;
   background-size: 300%;
   background-position-x: 200%;
   animation: shimmer 4s infinite linear;
   padding: 5px;
-  margin: 45px 10px 20px 10px;
+  margin: 45px 5px;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.profile-photo {
-  background-image: url("https://i.ibb.co/rQXdvC7/DSC-0196.jpg"); /*intial background image */
-  height: 195px;
-  width: 195px;
-  padding-top: 3px;
+.profile-photo-frame-2 {
+  border-radius: 5px;
+  background: linear-gradient(45deg, #1b998b 20%, #c5d86d 50%, #1b998b 60%);
+  width: 90vw;
+  height: 3px;
+  background-size: 300%;
+  background-position-x: 200%;
+  padding: 5px;
+  margin: 5px 0px 20px 0px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#profile-art-frame {
+  border-radius: 5px;
+  background: none;
+  padding: 5px;
+  margin: 45px 5px 20px 5px;
+  box-shadow: none;
+  border: none;
+}
+
+@media (max-width: 480px) {
+  #profile-art-frame,
+  .profile-art {
+    display: none;
+  }
+}
+
+.profile-art {
+  height: 255px;
+  width: 255px;
+  padding-top: 0px;
   background-size: cover;
   border-radius: 5px;
-  margin: auto;
+  margin: 0px;
+}
+.profile-photo {
+  background-image: url("https://i.ibb.co/rQXdvC7/DSC-0196.jpg"); /*intial background image */
+  height: 255px;
+  width: 255px;
+  padding-top: 0px;
+  background-size: cover;
+  border-radius: 5px;
+  margin: 0px;
   transition: background-image 0.5s ease-in-out; /* Smooth transition */
 }
 
@@ -183,22 +241,50 @@ li {
     background-position: 40%;
   }
 }
-/*This is the container for the content inside of hello-2 div*/
-.kd-container {
-  display: flex;
-  flex-direction: row;
-  animation: grow 2.5s 2s 1;
-}
-/*This is the content inside of hello div*/
-.kd-content {
+
+/*This is the content inside of welcome content div*/
+.kd-content-1 {
   display: flex;
   flex-direction: column;
   border-radius: 5px;
-  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
-  width: 400px;
-  height: 200px;
+  background: linear-gradient(to left, #c5d86d, #1b998b);
+  width: 700px;
+  height: 250px;
+  padding: 10px 15px;
+  margin: 45px 5px 0px 10px;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  animation: grow 2.5s 4s 1;
+}
+
+#intro {
+  margin-top: 10px;
+  padding: 0;
+  font-size: 1em;
+}
+
+.welcome-section {
+  /*text for kd content- 1*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5px 0;
+  height: auto;
+}
+
+.kd-content-2 {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 5px;
+  background: linear-gradient(to left, #c5d86d, #1b998b);
+  width: 75vw;
+  height: 250px;
   padding: 5px;
-  margin: 45px 10px 20px 10px;
+  margin: 5px 5px 0px 0px;
   z-index: 1;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -208,6 +294,7 @@ li {
   border-radius: 150px;
   border: 3px solid #c5d86d;
   margin-left: 10px;
+  margin-top: 0px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -218,6 +305,18 @@ li {
     flex-direction: column;
     animation: none;
     margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo-frame-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #role {
+    color: black;
   }
 }
 
@@ -236,25 +335,29 @@ li {
 }
 
 @media (max-width: 480px) {
-  .kd-content {
+  .kd-content-1,
+  .kd-content-2 {
     margin: 10px;
-    width: 82%;
+    width: 65vw;
     padding: 20px 25px;
     height: auto;
     background: #fff9ec;
+    animation: none;
   }
+}
+
+#skills-title {
+  text-align: left;
 }
 
 .skills-container {
   display: flexbox;
   flex-direction: row;
   justify-content: space-evenly;
-  background: linear-gradient(45deg, #1b998b 20%, #c5d86d 50%);
-  font-family: "Lucida Console", "Courier New", monospace;
+  background: #fff9ec;
   text-align: center;
-  font-weight: bold;
   padding: 50px;
-  margin: 25px auto;
+  margin: 10px auto;
   width: 80vw;
   height: auto;
   border-radius: 5px;
@@ -265,7 +368,7 @@ li {
 /* List of skills styling*/
 #skills {
   display: inline-block;
-  background: #fff9ec;
+  background: linear-gradient(to left, #c5d86d, #1b998b);
   width: 185px;
   border-radius: 5px;
   padding: 5px 10px;
@@ -292,16 +395,12 @@ li {
   align-items: left;
   background-color: #fff9ec;
   padding: 50px;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 80vw;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 5px;
-}
-
-#about-me-text {
-  text-align: left;
 }
 
 @media (max-width: 480px) {
@@ -312,7 +411,7 @@ li {
 
 .grid-background-2 {
   /*This is the start of the social proof section.*/
-  background-color: #fff9ec;
+  background-color: linear-gradient(to left, #c5d86d, #1b998b);
   padding: 50px 0;
   margin: 20px auto;
   width: 85vw;
@@ -346,7 +445,7 @@ li {
 }
 
 #about-me-quote-card {
-  background: linear-gradient(to right, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #c5d86d, #1b998b);
   color: black;
   border-radius: 5px;
   padding: 5px 10px;
@@ -359,8 +458,12 @@ li {
   backface-visibility: hidden;
 }
 
+#about-me-text {
+  text-align: left;
+}
+
 .quote-card-front {
-  background: linear-gradient(to right, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #c5d86d, #1b998b);
   color: black;
   border-radius: 5px;
   margin: 5px;
@@ -480,7 +583,7 @@ iframe {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background: linear-gradient(to right, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #c5d86d, #1b998b);
   color: black;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -492,19 +595,25 @@ iframe {
 
 /* Style the back side */
 .flip-card-back {
-  background: linear-gradient(to right, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #c5d86d, #1b998b);
   color: #fff9ec;
   transform: rotateY(180deg);
   border-radius: 10px;
   height: 300px;
   width: 300px;
-  font-family: sans-serif;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .flip-card-back h1 {
   padding-top: 55px;
+  font-family: "Amatic SC", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
 }
 
 .project-link {
@@ -512,17 +621,18 @@ iframe {
   background-color: #fff9ec;
   padding: 10px;
   border-radius: 5px;
-  border-left: 5px solid #1b998b;
   margin-top: 20px;
   color: black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .project-link:hover {
-  background: #c5d86d;
+  background: #f08080;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: bold;
-  border: 5px solid #fff9ec;
+  border: 2px solid #fff9ec;
 }
 
 /*Add media query for mobile. */
@@ -534,19 +644,40 @@ iframe {
   }
 }
 
+#footer-grid {
+  /*This is to adjust size of this section.*/
+  background: linear-gradient(to left, #c5d86d, #1b998b);
+  padding: 20px 0px 50px 0px;
+  margin: 20px auto;
+  width: 85vw;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+}
+
 .footer-text {
   text-align: left;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: "Varela", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   width: auto;
   height: 30vh;
   padding: 10px 20px 10px 20px;
 }
 
 .footer-text-1 {
-  font-family: "Lucida Console", "Courier New", monospace;
   width: auto;
   color: white;
   padding: 20px;
   margin: auto;
   text-align: center;
+}
+
+#pull-request-link:hover {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #f08080;
+  text-underline-offset: 5px;
+  font-weight: 600;
 }
