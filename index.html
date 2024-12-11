@@ -6,11 +6,14 @@
   <title>Kristy Dahlquist Portfolio</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/QNyPYy4Q/favicon.png">
-  </head>  
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Varela&display=swap" rel="stylesheet">
+</head>
+
 <body>
   <div>
-    <nav id="navbar" class="navbar">
+    <nav class="navbar">
       <ul class="nav-list">
         <li>
           <a href="#welcome-section">About</a>
@@ -30,7 +33,10 @@
         <li>
           <a href="#mypicks">My Picks</a>
         </li>
+        <li>
+        </li>
       </ul>
+
     </nav>
 
     <section class="callout">
@@ -39,14 +45,19 @@
 
     <section class="welcome-section" id="welcome-section">
       <div class="kd-container">
-        <div class="profile-photo-frame">
+      
+        <div class="profile-photo-frame-1" id="profile-art-frame">
+          <div class="profile-art">
+           <img class="profile-art" src="https://i.postimg.cc/QtsjpXg7/Untitled-design-1.png" alt="sqiggles">
+          </div>
+        </div>
+  <div class="profile-photo-frame-1">
           <div class="profile-photo"></div>
         </div>
-        
-        <div class="kd-content">
-          <h2>Kristy Dahlquist ☺︎</h2>
+        <div class="kd-content-1">
+          <h2>Kristy Dahlquist</h2>
           <h3 id="role">Program Manager</h3>
-          <p>Nice to meet you. I built this portfolio page with pure HTML/CSS. Take a look around. <b>Let's connect!</b></p>
+          <p id="intro">Nice to meet you. I love to build things: relationships, systems, processess, strategy, sandwiches— I even built this portfolio page with pure HTML/CSS.<em> I'm currently working on my Project Management Professional Certification (PMP).</em> Take a look around. <b>Let's connect!</b></p>
           <div> <a href="https://github.com/KGutie/KGutie" class="social-link" target="_blank">
             </a>
             <a href="https://www.linkedin.com/in/kristy-dahlquist/" class="social-link" target="_blank">
@@ -58,54 +69,81 @@
           </div>
         </div>
       </div>
+      
+      <!--This is the New  section in the welcome section-->  
+       <section class="welcome-section" id="welcome-section">
+     <!--  <div class="kd-container">
+       <div class="kd-content-2">
+        </div>      
+        <div class="profile-photo-frame-2">
+          <div></div>
+        </div>
 
-      <!--This is the beginning of the skills section!-->
+      </div>-->  
+
+      <!--This is the beggining of the skills section!-->
       <section>
         <div class="skills-container">
-          <h2>Skills</h2>
+          <h2 id="skills-title">✱ Skills</h2>
           <p id="skills">problem-solving</p>
-          <p id="skills">Kaizen</p>
-            <p id="skills">strategic mindset</p>
+          <p id="skills">continuous growth</p>
           <p id="skills">data analysis</p>
-            <p id="skills">customer-obsessed</p>
+          <p id="skills">strategic mindset</p>
           <p id="skills">program management</p>
           <p id="skills">project management</p>
           <p id="skills">community building</p>
           <p id="skills">creative</p>
-          <p id="skills">flexible</p>
+          <p id="skills">customer-obsessed</p>
           <p id="skills">developer marketing</p>
           <p id="skills">design thinking</p>
+          <p id="skills">systems thinking</p>
         </div>
       </section>
       <!-- About me section-->
       <section>
         <div class="grid-background-3">
-          <h2>About Me</h2>
+          <h2>✱ About Me</h2>
           <h3>This is my story from dirt to digital.</h3>
           <div class="project-tile">
             <div class="quote-card">
               <div class="quote-card-front" id="about-me-quote-card">
                 <div id="about-me-text">
                   <p>I most recently worked at Auth0 by Okta in Developer Marketing for about 4 years, where I had the privilege of managing a vibrant developer community through the Auth0 Ambassador Program. Before that, I spent over a decade in outdoor education and adventure travel with renowned companies like REI and Dagger Kayaks, orchestrating large-scale international adventures, training and guiding dedicated teams, and ensuring the success of our programs. I like to think of this journey as moving from "dirt to digital." I find joy in kayaking on the ocean and exploring the world of coding. My aspiration is to become a great storyteller, driven by the belief that every company is a tech company. Engaging people in their next adventure, whether technical or tangible, begins with leveraging the power of digital tools. Let's dig deeper.</p>
-                  <p>While my background working in the outdoor industry sounds like a far cry from the tech world, it isn't so different when you look at the big picture. From click to class, from email to real experience, I love connecting, creating, and integrating community and user experiences whether they're totally digital or completely human! You can't get people hitting the dirt for their next adventure without the digital touch.</p>
-                  <p>And speaking of digital dirt, I'm here to solve problems, clean up dirty processes, create and execute new ideas, and drive results with creativity and a growth mindset. Because let's face it, a little dirt is essential for real growth and progress!</p>
-                  <p>Customer-obsessed. Curious. Community focused. Data driven. Operationally sound. Technically minded. Super tidy.</p>
-                  <p>That's me!</p>
+
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+            <div class="project-tile">
+              <div class="quote-card">
+                <div class="quote-card-front" id="about-me-quote-card">
+                  <div id="about-me-text">
+                    <p>While my background working in the outdoor industry sounds like a far cry from the tech world, it isn't so different when you look at the big picture. From click to class, from email to real experience, I love connecting, creating, and integrating community and user experiences whether they're totally digital or completely human! You can't get people hitting the dirt for their next adventure without the digital touch.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="project-tile">
+                <div class="quote-card">
+                  <div class="quote-card-front" id="about-me-quote-card">
+                    <div id="about-me-text">
+                      <p>And speaking of digital dirt, I'm here to solve problems, clean up dirty processes, create and execute new ideas, and drive results with creativity and a growth mindset. Because let's face it, a little dirt is essential for real growth and progress!</p>
+                      <p>Customer-obsessed. Curious. Community focused. Data driven. Operationally sound. Technically minded. Super tidy.</p>
+                      <p>That's me!</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       </section>
 
-      <!--This is the beginning of the portfolio sections!-->
+      <!--This is the beggining of the portfolio sections!-->
       <!--The first section is Social Proof-->
       <section>
         <div class="grid-background-2" id="social">
-          <h2> Social Proof</h2>
+          <h2>✱ Social Proof</h2>
           <h5>Just a few nice things former coworkers, vendors, and managers have said about working with me.</h5>
           <div class="grid-container-2">
-            <!--This is the beginning of the card code #1.-->
+            <!--This is the beggining of the card code #1.-->
             <div class="project-tile">
               <div class="quote-card">
                 <div class="quote-card-front">
@@ -116,7 +154,7 @@
               </div>
             </div>
             <br>
-            <!--This is the beginning of the card code #2.-->
+            <!--This is the beggining of the card code #2.-->
             <div class="project-tile">
               <div class="quote-card">
                 <div class="quote-card-front">
@@ -127,7 +165,7 @@
               </div>
             </div>
             <br>
-            <!--This is the beginning of the card code #3.-->
+            <!--This is the beggining of the card code #3.-->
             <div class="project-tile">
               <div class="quote-card">
                 <div class="quote-card-front">
@@ -138,7 +176,7 @@
               </div>
             </div>
             <br>
-            <!--This is the beginning of quote #4.-->
+            <!--This is the beggining of quote #4.-->
             <div class="project-tile">
               <div class="quote-card">
                 <div class="quote-card-front">
@@ -148,20 +186,20 @@
                 </div>
               </div>
             </div> <br>
-            <!--This is the beginning of the quote card #5.-->
+            <!--This is the beggining of the quote card #5.-->
             <div class="project-tile">
               <div class="quote-card">
                 <div class="quote-card-front">
                   <div class="quote-card-inner">
                     <h6>"Kristy is smart, talented, and creative. She excels at creating systems and processes and is able to quickly learn new tools. We worked together to build and grow the Auth0 Ambassadors program, navigating many challenges along the way. Kristy never backed down from an obstacle and always kept the community as her first priority. She quickly garnered the support and goodwill of all of the Ambassadors as she nurtured the program and improved its day-to-day operations. <br><br>
 
-                      Kristy is a world-class executor. She will relentlessly pursue a task until it's complete, which she's able to accomplish through her knack for project management and her personal organization systems. In fact, Kristy became our go-to person on our team for tools and processes, first with Monday.com, then with Asana." <br><br> - Manager at Auth0 by Okta</h6>
+                      Kristy is a world class executor. She will relentlessly pursue a task until it's complete, which she's able to accomplish through her knack for project management and her personal organization systems. In fact, Kristy became our go-to person on our team for tools and processes, first with Monday.com, then with Asana." <br><br> - Manager at Auth0 by Okta</h6>
                   </div>
                 </div>
               </div>
             </div>
             <br>
-            <!--This is the beginning of the quote card #6-->
+            <!--This is the beggining of the quote card #6-->
             <div class="quote-card">
               <div class="quote-card-front">
                 <div class="quote-card-inner">
@@ -176,13 +214,13 @@
       <!-- This is the start of the Case Studies Section!-->
       <section class="projects" id="data">
         <div class="grid-background-1">
-          <h2>Data Analysis Case Studies</h2>
+          <h2>✱ Data Analysis</h2>
           <h5>
             <em>Hover over each card to flip it and learn more!</em><br><br>After completing the Google Data Analytics Professional Certification course, I opted to do the optional capstone project to practice and apply data analysis skills like preparing data, data cleaning, analysis, and data visualization, and programming with R.
           </h5>
 
           <div class="grid-container-1">
-            <!--This is the beginning of the card code for Bellabeat.-->
+            <!--This is the beggining of the card code for Bellabeat.-->
             <div class="project-tile">
               <div class="flip-card">
                 <div class="flip-card-inner">
@@ -192,17 +230,17 @@
                   <div class="flip-card-back">
                     <h1 class="project-title">Bellabeat Case Study</h1>
                     <p>Track it.</p><br>
-                    <a target="_blank" class="project-link" href="https://data-analytics-case-study.netlify.app/"> Trending . . .</a>
+                    <a target="_blank" class="project-link" href="https://codepen.io/K_Gutierrez/pen/bGXxvpM"> Trending . . .</a>
                   </div>
                 </div>
               </div>
             </div>
-            <!--This is the beginning of the card code for City Bike.
+            <!--This is the beggining of the card code for Job Search Wrapped.
           <div class="project-tile">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img class="project-img" src="insert image here" alt="city-cycle-case-study-photo">
+                  <img class="project-img" src="insert image here" alt="job-searched-wrapped-title-slide">
                 </div>
                 <div class="flip-card-back">
                   <h1 class="project-title">City Bike Case Study</h1>
@@ -212,22 +250,22 @@
               </div>-->
           </div>
         </div>
-        <!--This is the beginning of the card code for third case study.-->
+        <!--This is the beggining of the card code for thrid case study.-->
 
-        <!--This is the beginning of the card code for the next card. Keep the last two divs after it.-->
-  </div>
+        <!--This is the beggining of the card code for the next card. Keep the last two divs after it.-->
+        </d>
   </div>
   </section>
   </div>
   <!-- This is the HTML/CSS section-->
   <section>
     <div class="grid-background-1" id="html-css">
-      <h2>HTML/CSS Projects</h2>
+      <h2>✱ HTML/CSS Projects</h2>
       <h5>
         <em>Hover over each card to flip it and learn more!</em><br><br>Each button links to the code. These are projects I created after taking the FreeCodeCamp HTML/CSS course, the Scrimba HTML/CSS course, and a couple of others I created on my own.
       </h5>
       <div class="grid-container-1">
-        <!--This is the beginning of the card code for Portfolio Project-->
+        <!--This is the beggining of the card code for Portfolio Project-->
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -258,7 +296,7 @@
             </div>
           </div>
         </div>
-        <!--This is the beginning of the card code for David S. Pumpkins-->
+        <!--This is the beggining of the card code for David S. Pumpkins
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -272,8 +310,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <!--This is the beginning of the card code for the Recipe Card-->
+        </div> -->
+        <!--This is the beginning of the card code for the Recipe Card
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -287,7 +325,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!--This is the beginning of the card code for the Haiku Form-->
         <div class="project-tile">
           <div class="flip-card">
@@ -303,7 +341,7 @@
             </div>
           </div>
         </div>
-        <!--This is the beginning of the card code for the Product Landing Page-->
+        <!--This is the beggining of the card code for the Product Landing Page-->
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -318,7 +356,7 @@
             </div>
           </div>
         </div>
-        <!--This is the beginning of the card code for the technical documentation page-->
+        <!--This is the beggining of the card code for the technical documentation page-->
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -333,7 +371,7 @@
             </div>
           </div>
         </div>
-        <!--This is the beginning of the card code for the Smile Button-->
+        <!--This is the beggining of the card code for the Smile Button
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -347,8 +385,8 @@
               </div>
             </div>
           </div>
-        </div>
-        <!--This is the beginning of the card code for the next card. Keep the last two divs after it.-->
+        </div> -->
+        <!--This is the beggining of the card code for the next card. Keep the last two divs after it.-->
       </div>
     </div>
 
@@ -356,10 +394,10 @@
   <!-- This is the JavaScript Section -->
   <section>
     <div class="grid-background-1" id="javascript">
-      <h2>JavaScript Projects</h2>
+      <h2>✱ JavaScript Projects</h2>
       <h5><em>Hover over each card to flip it and learn more.</em><br><br>I created these projects while taking the Scrimba JavaScript course.</h5>
       <div class="grid-container-1">
-        <!--This is the beginning of the card code for the Wave Counter.-->
+        <!--This is the beggining of the card code for the Wave Counter.-->
         <div class="project-tile">
 
           <div class="flip-card">
@@ -375,7 +413,7 @@
             </div>
           </div>
         </div>
-        <!--This is the beginning of the card code for the Random Password Generator.-->
+        <!--This is the beggining of the card code for the Random Password Generator.-->
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -390,7 +428,7 @@
             </div>
           </div>
         </div>
-        <!--This is the beginning of the card code for the Score Board.-->
+        <!--This is the beggining of the card code for the Score Board.-->
         <div class="project-tile">
           <div class="flip-card">
             <div class="flip-card-inner">
@@ -405,14 +443,14 @@
             </div>
           </div>
         </div>
-        <!--This is the beginning of the card code for the next card. Keep the last two divs after it.-->
+        <!--This is the beggining of the card code for the next card. Keep the last two divs after it.-->
       </div>
     </div>
   </section>
   <!--My Picks Section -->
   <section class="projects" id="mypicks">
     <div class="grid-background-1">
-      <h2> My Picks </h2>
+      <h2>✱ My Picks </h2>
       <h5>Podcasts, books, and more.</h5>
       <div class="grid-container-1">
         <!--Code to Market Podcast here-->
@@ -442,16 +480,15 @@
           </div>
         </div>
 
-        <!--This is the beginning of the card code for the next card. Keep the last two divs after it.-->
+        <!--This is the beggining of the card code for the next card. Keep the last two divs after it.-->
       </div>
     </div>
   </section>
 
   <!--Footer section-->
   <section>
-    <div class="grid-background-2">
-      <p class="footer-text">P.S. I designed and created this portfolio page using tools like codepen.io, Github, coolors.io and Netlify! <br><br> If you have ideas for improvement, please submit a pull request <a target="_blank" href="https://github.com/KGutie/kdahlquist-portfolio-24"><b>here</b>.</a></p>
-
+    <div class="grid-background-2" id="footer-grid">
+      <p class="footer-text">P.S. I designed and created this portfolio page using tools like codepen.io, Github, coolors.co and Netlify! <br><br> If you have ideas for improvement, please submit a pull request <a id="pull-request-link" target="_blank" href="https://github.com/KGutie/kdahlquist-portfolio-24"><b>here</b>.</a></p>
     </div>
 
     <p class="footer-text-1"><em>Last updated November 2024 by K.Dahlquist</em></p>
