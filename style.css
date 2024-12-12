@@ -270,11 +270,12 @@ li {
   font-size: 40px;
   margin: 10px;
   padding: 0px;
+  box-shadow: 0;
 }
 
 #role {
   /*Styles the role under my name "Program Manager"*/
-  margin: -20px 0px 0px 10px;
+  margin: -20px 0px 10px 10px;
   padding: 0px;
   font-family: "Amatic SC", serif;
   font-weight: bold;
@@ -283,14 +284,14 @@ li {
   color: #fff9ec;
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #1b998b;
+  text-decoration-color: #c5d86d;
   text-underline-offset: 5px;
 }
 
 #profile-intro-text {
   font-size: auto;
   margin: 0px 0px 10px 0px;
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
 @keyframes grow {
@@ -514,7 +515,7 @@ iframe {
   }
   #connect {
     border: none;
-    border-radius: 0; 
+    border-radius: 0;
     padding: 5px;
     margin: 0px;
   }
