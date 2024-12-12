@@ -493,119 +493,70 @@ iframe {
   font-weight: 600;
 }
 
-/*Add media queries for mobile. */
+/*Mobile phone sizing */
+
 @media (max-width: 480px) {
   .navbar {
     padding: 0px 0px 60px 0px;
   }
-}
-
-@media (max-width: 480px) {
   .navbar a {
     font-size: 16px;
     padding: 5px;
     margin: auto;
   }
-}
-
-@media (max-width: 480px) {
   .navbar a:hover {
     font-size: 16px;
     padding: 5px 5px;
     margin: 0;
     height: 15px;
   }
-}
-
-@media (max-width: 480px) {
   #connect {
     border: none;
-    border-radius: none;
+    border-radius: 0; 
     padding: 5px;
     margin: 0px;
   }
-}
-
-@media (max-width: 480px) {
   #profile-art-frame,
   .profile-art {
     display: none;
   }
-}
-
-@media (max-width: 480px) {
-  #profile-section {
+  #flip-card-container {
     flex-direction: column;
   }
-}
-
-@media (max-width: 480px) {
   #role {
     color: black;
   }
-}
-
-@media (max-width: 350px) {
-  @keyframes grow {
-    20% {
-      transform: scale(20%);
-    }
-  }
-}
-
-@media (max-width: 480px) {
   .profile-content-box {
     height: auto;
     background: #fff9ec;
     animation: none;
   }
-}
-
-@media (max-width: 480px) {
   .quote-card {
     height: auto;
     width: 80vw;
     margin-top: 20px;
   }
-}
-
-@media (max-width: 480px) {
   #about-me-quote-card {
     padding: 10px 20px;
     font-size: 14px;
   }
-}
-@media (max-width: 480px) {
   #profile-intro-text {
     color: #1b998b;
   }
-}
-
-@media (max-width: 480px) {
   .quote-card-inner {
     width: 97%;
     height: auto;
     color: black;
     text-align: left;
   }
-}
-
-/*Add media query for mobile. This centers the whole flip card within grid-container-1*/
-@media (max-width: 480px) {
   .flip-card {
     margin-right: 40px;
   }
-}
-
-@media (max-width: 480px) {
   .project-link:hover {
     width: 250px;
     height: 250px;
     padding: 10px;
   }
-}
-
-@media (max-width: 480px) {
   #footer-section {
     height: 20vh;
     padding-bottom: 60px;
