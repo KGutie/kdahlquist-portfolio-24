@@ -500,7 +500,7 @@ iframe {
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 60px 0px;
   }
   .navbar a {
     font-size: 16px;
