@@ -329,7 +329,7 @@ li {
   color: black;
   border-radius: 5px;
   padding: 5px 10px;
-  width: 80vw;
+  width: 85vw;
   max-width: 1000px;
   margin: 10px 20px;
   height: auto;
@@ -342,7 +342,7 @@ li {
   position: sticky;
   top: 0;
   background: #fff9ec;
-  width: 100%;
+  width: 99%;
   height: auto;
   padding: 5px 5px;
   margin: 3px;
