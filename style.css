@@ -7,6 +7,7 @@ body {
   font-style: normal;
 }
 
+/* Links and text styling */
 a {
   text-decoration: none;
   color: black;
@@ -78,7 +79,7 @@ li {
   font-size: 40px;
   color: black;
 }
-
+/* Navbar specific element styling */
 .navbar {
   overflow: hidden;
   background-color: black;
@@ -91,13 +92,6 @@ li {
   z-index: 10;
 }
 
-/*Add media query for mobile. */
-@media (max-width: 480px) {
-  .navbar {
-    padding: 0px 0px 25px 0px;
-  }
-}
-
 .navbar a {
   float: left;
   display: inline;
@@ -108,15 +102,6 @@ li {
   font-weight: 400;
   font-style: normal;
   margin: 5px 10px;
-}
-
-/*Add media query for mobile. */
-@media (max-width: 480px) {
-  .navbar a {
-    font-size: 14px;
-    padding: 5px;
-    margin: auto;
-  }
 }
 
 .navbar a:hover {
@@ -132,16 +117,7 @@ li {
   text-underline-offset: 5px;
 }
 
-/*Add media query for mobile. */
-@media (max-width: 480px) {
-  .navbar a:hover {
-    font-size: 12px;
-    padding: 5px 5px;
-    margin: 0;
-    height: 15px;
-  }
-}
-
+/* Callout styling */
 .callout {
   position: relative;
   background-color: #fff9ec;
@@ -165,11 +141,10 @@ li {
   border-color: #1b998b transparent transparent transparent;
 }
 
-/*this is the start of the About Me section with the profile pic, text etc*/
+/*this is the start of the Profile section with the profile pic, text etc*/
 
 /*This is the container for the content content and profile pic divs*/
 .welcome-section {
-  /*text for kd content- 1*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,6 +153,7 @@ li {
   margin: 5px 0;
   height: auto;
 }
+
 .kd-container {
   display: flex;
   flex-direction: row;
@@ -210,13 +186,6 @@ li {
   margin: 45px 5px 20px 5px;
   box-shadow: none;
   border: none;
-}
-
-@media (max-width: 480px) {
-  #profile-art-frame,
-  .profile-art {
-    display: none;
-  }
 }
 
 .profile-art {
@@ -280,47 +249,12 @@ li {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-@media (max-width: 480px) {
-  .kd-container {
-    display: flex;
-    flex-direction: column;
-    animation: none;
-    margin: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  #role {
-    color: black;
-  }
-}
-
 @keyframes grow {
   30% {
     transform: scale(1.2);
   }
 }
-
-@media (max-width: 350px) {
-  @keyframes grow {
-    20% {
-      transform: scale(20%);
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .kd-content-1,
-  .kd-content-2 {
-    margin: 10px 10px 10px 0px;
-    width: 80vw;
-    padding: 15px 20px;
-    height: auto;
-    background: #fff9ec;
-    animation: none;
-  }
-}
-
+/* Skills section styling */
 #skills-title {
   text-align: left;
 }
@@ -352,23 +286,7 @@ li {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-@media (max-width: 480px) {
-  .profile-text {
-    padding: 20px 20px;
-    margin: 10px auto;
-    width: 82%;
-  }
-}
-
-@media (max-width: 480px) {
-  .skills-container {
-    padding: 20px 20px;
-    margin: 10px auto;
-    width: 81vw;
-  }
-}
-
-/*This is the start of the about me section.*/
+/*This is the start of the About Me section.*/
 .grid-background-3 {
   display: flex;
   flex-direction: column;
@@ -381,14 +299,6 @@ li {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 5px;
-}
-
-@media (max-width: 480px) {
-  .grid-background-3,
-  .grid-background-2,
-  .grid-background-1 {
-    width: 68vw;
-  }
 }
 
 .grid-background-2 {
@@ -415,7 +325,7 @@ li {
 .project-tile {
   margin: auto;
 }
-
+/* This is for the social proof quote cards */
 .quote-card {
   background: transparent;
   max-width: 75vw;
@@ -426,6 +336,7 @@ li {
   margin: 20px;
 }
 
+/* This is for the about me specific content section */
 #about-me-quote-card {
   background: linear-gradient(to left, #c5d86d, #1b998b);
   color: black;
@@ -444,6 +355,7 @@ li {
   text-align: left;
 }
 
+/* This is for the social proof quotes */
 .quote-card-front {
   background: linear-gradient(to left, #c5d86d, #1b998b);
   color: black;
@@ -457,17 +369,7 @@ li {
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
-
-/*Add media query for mobile. */
-@media (max-width: 480px) {
-  .quote-card-front,
-  #about-me-quote-card {
-    width: 90%;
-    height: auto;
-    padding: 3px 20px 3px 3px;
-  }
-}
-
+/* This is for the social proof quotes */
 .quote-card-inner {
   position: sticky;
   top: 0;
@@ -480,16 +382,7 @@ li {
   text-align: center;
 }
 
-/*Add media query for mobile. */
-@media (max-width: 480px) {
-  .quote-card-inner {
-    width: 97%;
-    height: auto;
-    color: black;
-    text-align: left;
-  }
-}
-/* this is the beginning of the projects section for data analysis, html/css, and javascript */
+/* this is the grid for the projects section for data analysis, html/css, and javascript */
 .grid-background-1 {
   background-color: #fff9ec;
   padding: 50px 0;
@@ -617,15 +510,6 @@ iframe {
   border: 2px solid #fff9ec;
 }
 
-/*Add media query for mobile. */
-@media (max-width: 480px) {
-  .project-link:hover {
-    width: 250px;
-    height: 250px;
-    padding: 10px;
-  }
-}
-
 #footer-grid {
   /*This is to adjust size of this section.*/
   background: linear-gradient(to left, #c5d86d, #1b998b);
@@ -662,6 +546,127 @@ iframe {
   text-decoration-color: #f08080;
   text-underline-offset: 5px;
   font-weight: 600;
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0px 0px 25px 0px;
+  }
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 14px;
+    padding: 5px;
+    margin: auto;
+  }
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .navbar a:hover {
+    font-size: 12px;
+    padding: 5px 5px;
+    margin: 0;
+    height: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #profile-art-frame,
+  .profile-art {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .kd-container {
+    display: flex;
+    flex-direction: column;
+    animation: none;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #role {
+    color: black;
+  }
+}
+
+@media (max-width: 350px) {
+  @keyframes grow {
+    20% {
+      transform: scale(20%);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .kd-content-1,
+  .kd-content-2 {
+    margin: 10px 10px 10px 0px;
+    width: 80vw;
+    padding: 15px 20px;
+    height: auto;
+    background: #fff9ec;
+    animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-text {
+    padding: 20px 20px;
+    margin: 10px auto;
+    width: 82%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    padding: 20px 20px;
+    margin: 10px auto;
+    width: 81vw;
+  }
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .quote-card-front,
+  #about-me-quote-card {
+    width: 90%;
+    height: auto;
+    padding: 3px 20px 3px 3px;
+  }
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .quote-card-inner {
+    width: 97%;
+    height: auto;
+    color: black;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-background-3,
+  .grid-background-2,
+  .grid-background-1 {
+    width: 68vw;
+  }
+}
+
+/*Add media query for mobile. */
+@media (max-width: 480px) {
+  .project-link:hover {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+  }
 }
 
 @media (max-width: 480px) {
