@@ -451,11 +451,11 @@ iframe {
 }
 
 .project-link:hover {
-  background: #f08080;
-  padding: 20px;
+  background: #fff9ec;
+  padding: 13px;
   border-radius: 5px;
   font-weight: bold;
-  border: 2px solid #fff9ec;
+  border-left: 5px solid #c5d86d;
 }
 
 #footer-section {
