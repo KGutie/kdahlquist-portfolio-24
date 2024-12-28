@@ -116,6 +116,8 @@ li {
 
 #connect:hover {
   text-decoration: none;
+  background: linear-gradient(to left, #c5d86d 20%, #1b998b 50%);
+  color: black;
 }
 
 /* Callout styling */
@@ -150,25 +152,6 @@ li {
   color: black;
 }
 
-/* This is the large white container that holds the content in all sections below the PROFILE section. */
-.section-container {
-  background-color: #fefbf4;
-  padding-bottom: 30px;
-  margin: 15px 10px;
-  width: 90vw;
-  max-width: 1000px;
-  height: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 5px;
-}
-
-.section-title {
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px;
-}
-
 #profile-section {
   /*styles the PROFILE section container*/
   display: flex;
@@ -177,6 +160,8 @@ li {
   flex-direction: row;
   flex-wrap: wrap;
   height: auto;
+  width: 90vw;
+  max-width: 1000px;
   background: none;
   margin-bottom: 0px;
   box-shadow: none;
@@ -196,23 +181,6 @@ li {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-#profile-art-frame {
-  border-radius: 5px;
-  background: none;
-  padding: 5px;
-  margin: 45px 5px 20px 5px;
-  box-shadow: none;
-  border: none;
-}
-
-.profile-art {
-  height: 240px;
-  width: 240px;
-  padding-top: 0px;
-  background-size: cover;
-  border-radius: 5px;
-  margin: 0px;
-}
 .profile-photo {
   background-image: url("https://i.ibb.co/rQXdvC7/DSC-0196.jpg"); /*intial background image */
   height: 255px;
@@ -235,13 +203,6 @@ li {
 
 /*contains the social icons*/
 
-.social-icon-container {
-  display: block;
-  margin-top: -20px;
-  margin-left: 10px;
-  width: 255px;
-}
-
 .social-icons {
   border-radius: 150px;
   border: 3px solid #c5d86d;
@@ -251,20 +212,22 @@ li {
   width: 40px;
 }
 
-/*This is the container that holds the text and social icons inside of profile-section  div*/
+/*This is the container that holds the text and graphics inside of current projects div*/
+
 .profile-content-box {
   border-radius: 5px;
   background: linear-gradient(to left, #c5d86d, #1b998b);
-  width: 90vw;
-  max-width: 1000px;
+  width: 700px;
+  max-width: 765px;
   height: 255px;
-  padding: 10px 20px;
-  margin: 25px 5px 10px 5px;
+  padding: 5px;
+  margin: 45px 5px 10px 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   animation: grow 2.5s 4s 1;
-  z-index: -1;
 }
+
+/*This is the container that holds the text and social icons inside of profile-section  div*/
 
 #name {
   font-size: 40px;
@@ -300,12 +263,30 @@ li {
   }
 }
 
+/* This is the large white container that holds the content in all sections below the PROFILE section. */
+.section-container {
+  background-color: #fefbf4;
+  padding-bottom: 30px;
+  margin: 15px 10px;
+  width: 90vw;
+  max-width: 1000px;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 5px;
+}
+
+.section-title {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
 /* This is the container that holds the flip cards or quote cards in each section!! */
 .flip-card-container {
   display: flex;
-  flex-diection: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -326,7 +307,13 @@ li {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-/* This is for the ABOUT ME content blocks */
+.current-projects-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* This is for the QUOTE CARD content blocks */
 .quote-card {
   background: linear-gradient(to left, #c5d86d, #1b998b);
   color: black;
@@ -499,8 +486,14 @@ iframe {
 /*Mobile phone sizing */
 
 @media (max-width: 480px) {
+  body {
+    background: black;
+  }
   .navbar {
-    padding: 0px 0px 60px 0px;
+    padding: 0px 0px 40px 0px;
+    border-radius: 0px 0px 5px 5px;
+    border-bottom: 1px solid gray;
+    background: black;
   }
   .navbar a {
     font-size: 16px;
@@ -515,13 +508,9 @@ iframe {
   }
   #connect {
     border: none;
-    border-radius: 0;
-    padding: 5px;
+    border-radius: 2;
+    padding: 5px 10px 10px 10px;
     margin: 0px;
-  }
-  #profile-art-frame,
-  .profile-art {
-    display: none;
   }
   #flip-card-container {
     flex-direction: column;
@@ -533,6 +522,8 @@ iframe {
     height: auto;
     background: #fff9ec;
     animation: none;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .quote-card {
     height: auto;
