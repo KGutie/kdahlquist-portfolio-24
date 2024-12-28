@@ -514,6 +514,9 @@ iframe {
   }
   #flip-card-container {
     flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
   #role {
     color: black;
