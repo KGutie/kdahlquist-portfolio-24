@@ -66,6 +66,8 @@ li {
 .navbar {
   overflow: hidden;
   background-color: black;
+  opacity: 87%;
+  box-shadow: 0 8px 6px -6px gray;
   height: 55px;
   width: 100%;
   padding: 10px 0;
@@ -74,11 +76,6 @@ li {
   top: 0;
   left: 0;
   z-index: 10;
-}
-
-.social-icon-container {
-  display: block;
-  margin-top: -20px;
 }
 
 .navbar a {
@@ -128,8 +125,9 @@ li {
   border: 5px solid #1b998b;
   text-align: center;
   padding: 0 0 20px 0;
-  margin: 0 auto 20px auto;
+  margin: 120px auto 20px auto;
   width: 300px;
+  height: 80px;
   color: #333;
 }
 
@@ -145,7 +143,7 @@ li {
 }
 
 .callout-text {
-  margin: 100px auto 0px auto;
+  margin: 30px auto 0px auto;
   font-family: "Amatic SC", serif;
   font-weight: 800;
   font-size: 40px;
@@ -202,7 +200,11 @@ li {
 }
 
 /*contains the social icons*/
-
+.social-icon-container {
+  display: block;
+  margin-top: -20px;
+  margin-left: 10px;
+}
 .social-icons {
   border-radius: 150px;
   border: 3px solid #c5d86d;
@@ -490,9 +492,6 @@ iframe {
   }
   .navbar {
     padding: 0px 0px 40px 0px;
-    border-radius: 0px 0px 5px 5px;
-    border-bottom: 1px solid gray;
-    background: black;
   }
   .navbar a {
     font-size: 16px;
