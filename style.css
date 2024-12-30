@@ -613,6 +613,7 @@ iframe {
   }
   .menu {
     top: 0;
+    box-shadow: 0 7px 6px -7px gray;
   }
   .callout {
     margin-top: 80px;
