@@ -68,7 +68,7 @@ li {
   background-color: black;
   opacity: 87%;
   box-shadow: 0 8px 6px -6px gray;
-  height: 55px;
+  height: 50px;
   width: 100%;
   padding: 10px 0;
   position: fixed;
@@ -131,6 +131,18 @@ li {
   z-index: 10;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+#social-mobile-container {
+  display: block;
+  padding-left: 170px;
+  margin-top: -35px;
+}
+
+#mobile-icons {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #c5d86d;
 }
 
 .fold {
@@ -309,6 +321,7 @@ li {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   height: 40px;
   width: 40px;
+  margin: 2px;
 }
 
 /*This is the container that holds the text and graphics inside of current projects div*/
@@ -324,6 +337,7 @@ li {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   animation: grow 2.5s 4s 1;
+  font-size: 14px;
 }
 
 /*This is the container that holds the text and social icons inside of profile-section  div*/
