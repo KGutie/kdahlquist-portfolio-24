@@ -1,676 +1,536 @@
-body {
-  background-color: #fff9ec;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* Links and text styling */
-a {
-  text-decoration: none;
-  color: black;
-}
-
-p,
-h3 {
-  padding: 5px 10px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h2 {
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  width: auto;
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-h5 {
-  margin: 10px 20px;
-  padding: 10px;
-  border-radius: 5px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: auto;
-}
-
-h6 {
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: auto;
-  padding: 0px 5px;
-  font-size: 14px;
-}
-
-li {
-  text-decoration: none;
-  list-style: none;
-  text-align: center;
-}
-
-/* Navbar specific element styling */
-.navbar {
-  overflow: hidden;
-  background-color: black;
-  opacity: 87%;
-  box-shadow: 0 8px 6px -6px gray;
-  height: 50px;
-  width: 100%;
-  padding: 10px 0;
-  position: fixed;
-  display: in-line;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.navbar a {
-  float: left;
-  display: inline;
-  color: #c5d86d;
-  text-align: bottom;
-  text-decoration: none;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 5px 10px;
-}
-
-.navbar a:hover {
-  height: 20px;
-  margin-top: 5px;
-  width: auto;
-  color: #fff9ec;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #1b998b;
-  text-underline-offset: 5px;
-}
-
-#connect {
-  color: #1b998b;
-  border: 1px solid #c5d86d;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 0px;
-}
-
-#connect:hover {
-  text-decoration: none;
-  background: linear-gradient(to left, #c5d86d 20%, #1b998b 50%);
-  color: black;
-}
-
-/* Styling for mobile nav menu /*
-/*Code for toggle styling */
-.menu {
-  padding-left: 0px;
-  overflow: visible;
-  position: fixed;
-  background-color: black;
-  width: 100%;
-  opacity: 95%;
-  box-shadow: 0 8px 6px -6px gray;
-  height: 55px;
-  z-index: 10;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-#social-mobile-container { /* Styling for social icons in mobile  menu */ 
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -35px;
-  margin-right: 20px;
-}
-
-#mobile-icons {
-  width: 25px;
-  height: 25px;
-  border: 2px solid #c5d86d;
-}
-
-.fold {
-  display: inline;
-  width: 100px;
-  margin-top: -50px;
-  width: 40vw;
-  height: auto;
-  background-color: #fff9ec;
-  padding: 20px;
-  border-radius: 5px;
-  word-wrap: break-word;
-  box-decoration-break: clone;
-  border: none;
-}
-
-.fold a,
-#connect {
-  display: flex;
-  flex-direction: column;
-  color: #1b998b;
-  text-decoration: none;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  margin-left: -50px;
-  padding: 10px;
-}
-
-.fold a:hover,
-#connect:hover {
-  height: 20px;
-  width: auto;
-  color: black;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #c5d86d;
-  text-underline-offset: 5px;
-}
-
-.unfolder {
-  display: none;
-}
-
-.toggle-label {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 14px;
-  margin-top: -10px;
-  width: 65vw;
-  height: 50px;
-  color: #c5d86d;
-  text-decoration: none;
-  font-family: "Varela", sans-serif;
-  font-size: 40px;
-  font-style: normal;
-}
-
-.unfold-icon,
-.fold-icon {
-  color: #c5d86d;
-  padding: 10px;
-  display: inline-block;
-}
-.unfolder ~ .fold {
-  display: none;
-}
-.unfolder ~ label .fold-icon {
-  display: none;
-}
-
-.unfolder:checked ~ .fold {
-  display: block;
-}
-.unfolder:checked ~ label .fold-icon {
-  display: inline-block;
-}
-.unfolder:checked ~ label .unfold-icon {
-  display: none;
-}
-
-/* Callout styling */
-.callout {
-  position: relative;
-  background-color: #fff9ec;
-  border-radius: 5px;
-  border: 5px solid #1b998b;
-  text-align: center;
-  padding: 0 0 20px 0;
-  margin: 120px auto 20px auto;
-  width: 300px;
-  height: 80px;
-  color: #333;
-}
-
-.callout::after {
-  content: "";
-  position: absolute;
-  bottom: -105px;
-  /* Position the tail below the callout */
-  left: 60px;
-  border-width: 55px 15px 50px 10px;
-  border-style: solid;
-  border-color: #1b998b transparent transparent transparent;
-}
-
-.callout-text {
-  margin: 30px auto 0px auto;
-  font-family: "Amatic SC", serif;
-  font-weight: 800;
-  font-size: 40px;
-  color: black;
-}
-
-#profile-section {
-  /*styles the PROFILE section container*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: auto;
-  width: 90vw;
-  max-width: 1000px;
-  background: none;
-  margin-bottom: 0px;
-  box-shadow: none;
-}
-
-.profile-photo-frame-1 {
-  border-radius: 5px;
-  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
-  background-size: 300%;
-  background-position-x: 200%;
-  height: 255px;
-  width: 255px;
-  animation: shimmer 4s infinite linear;
-  padding: 5px;
-  margin: 45px 5px 10px 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.profile-photo {
-  background-image: url("https://i.ibb.co/rQXdvC7/DSC-0196.jpg"); /*intial background image */
-  height: 255px;
-  width: 255px;
-  padding-top: 0px;
-  background-size: cover;
-  border-radius: 5px;
-  margin: 0px;
-  transition: background-image 0.5s ease-in-out; /* Smooth transition */
-}
-.profile-photo:hover {
-  background-image: url("https://i.postimg.cc/SsF1Cg4W/8bit-me-favicon-full-size.png");
-}
-
-@keyframes shimmer {
-  to {
-    background-position: 40%;
-  }
-}
-
-/*contains the social icons*/
-.social-icon-container {
-  display: block;
-  margin-top: -20px;
-  margin-left: 10px;
-}
-.social-icons {
-  border-radius: 150px;
-  border: 3px solid #c5d86d;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  height: 40px;
-  width: 40px;
-  margin: 2px;
-}
-
-/*This is the container that holds the text and graphics inside of current projects div*/
-
-.profile-content-box {
-  border-radius: 5px;
-  background: linear-gradient(to left, #c5d86d, #1b998b);
-  width: 700px;
-  max-width: 765px;
-  height: 255px;
-  padding: 5px;
-  margin: 45px 5px 10px 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  animation: grow 2.5s 4s 1;
-  font-size: 14px;
-}
-
-/*This is the container that holds the text and social icons inside of profile-section  div*/
-
-#name {
-  font-size: 40px;
-  margin: 10px;
-  padding: 0px;
-  box-shadow: 0;
-}
-
-#role {
-  /*Styles the role under my name "Program Manager"*/
-  margin: -20px 0px 10px 10px;
-  padding: 0px;
-  font-family: "Amatic SC", serif;
-  font-weight: bold;
-  font-size: 40px;
-  font-style: normal;
-  color: #fff9ec;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #c5d86d;
-  text-underline-offset: 5px;
-}
-
-#profile-intro-text {
-  font-size: auto;
-  margin: 0px 0px 10px 0px;
-  padding: 10px 10px;
-}
-
-@keyframes grow {
-  30% {
-    transform: scale(1.2);
-  }
-}
-
-/* This is the large white container that holds the content in all sections below the PROFILE section. */
-.section-container {
-  background-color: #fefbf4;
-  padding-bottom: 30px;
-  margin: 15px 10px;
-  width: 90vw;
-  max-width: 1000px;
-  height: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 5px;
-}
-
-.section-title {
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 10px;
-}
-
-/* This is the container that holds the flip cards or quote cards in each section!! */
-.flip-card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Skills section styling */
-#skills-section {
-  flex-direction: row;
-  padding-bottom: 30px;
-}
-/* List of skills styling*/
-#skills {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
-  width: 185px;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 10px;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.current-projects-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* This is for the QUOTE CARD content blocks */
-.quote-card {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
-  color: black;
-  border-radius: 5px;
-  padding: 5px 10px;
-  width: 85vw;
-  max-width: 1000px;
-  margin: 10px 20px;
-  height: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.quote-card-inner {
-  /*the white box on the social proof section*/
-  position: sticky;
-  top: 0;
-  background: #fff9ec;
-  width: 99%;
-  height: auto;
-  padding: 5px 5px;
-  margin: 3px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.quote-text {
-  font-size: 14px;
-}
-
-.project-img {
-  margin: auto;
-  border-radius: 5px;
-  width: 300px;
-  height: 300px;
-}
-
-/*This is for the media in the "My Picks" section */
-iframe {
-  margin: auto;
-  border-radius: 5px;
-  width: 300px;
-  height: 300px;
-}
-
-.flip-card {
-  background: transparent;
-  width: 300px;
-  height: 300px;
-  border: none;
-  margin: 30px;
-  perspective: 1000px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do a horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 5px;
-  padding: 5px;
-  height: 300px;
-  width: 300px;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
-  color: #fff9ec;
-  transform: rotateY(180deg);
-  border-radius: 10px;
-  height: 300px;
-  width: 300px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.flip-card-back h1 {
-  padding-top: 55px;
-  font-family: "Amatic SC", serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 30px;
-}
-
-.project-link {
-  text-decoration: none;
-  background-color: #fff9ec;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-  color: black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.project-link:hover {
-  background: #fff9ec;
-  padding: 13px;
-  border-radius: 5px;
-  font-weight: bold;
-  border-left: 5px solid #c5d86d;
-}
-
-#footer-section {
-  /*This is to adjust size of this section.*/
-  background: linear-gradient(to left, #c5d86d, #1b998b);
-  padding: 20px 0px 50px 0px;
-  margin: 20px auto;
-  width: 90vw;
-  height: 10vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  border-radius: 5px;
-}
-
-.footer-text {
-  text-align: left;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: auto;
-  height: 30vh;
-  padding: 10px 20px 10px 20px;
-}
-
-.last-updated-text {
-  width: auto;
-  color: white;
-  padding: 20px;
-  margin: auto;
-  text-align: center;
-}
-
-#pull-request-link:hover {
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: #f08080;
-  text-underline-offset: 5px;
-  font-weight: 600;
-}
-
-/* Media queries to hide dropdown menu on large screens */
-@media screen and (min-width: 481px) {
-  .menu {
-    display: none;
-  }
-}
-
-/*Mobile phone sizing */
-
-@media (max-width: 480px) {
-  body {
-    background: black;
-  }
-  .navbar {
-    display: none;
-  }
-  .menu {
-    top: 0;
-    box-shadow: 0 7px 6px -7px gray;
-  }
-  .callout {
-    margin-top: 80px;
-  }
-  #connect {
-    border: none;
-    border-radius: 2;
-    margin-left: -50px;
-    background-color: none;
-    padding: 5px;
-  }
-
-  #connect:hover {
-    text-decoration: none;
-    background: linear-gradient(to left, #c5d86d 20%, #1b998b 50%);
-    color: black;
-  }
-
-  #role {
-    color: black;
-  }
-  .profile-content-box {
-    height: auto;
-    background: #fff9ec;
-    animation: none;
-    margin-top: 30px;
-    margin-bottom: 0px;
-  }
-  .quote-card {
-    height: auto;
-    width: 80vw;
-    margin-top: 20px;
-  }
-  #about-me-quote-card {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-  #profile-intro-text {
-    color: #1b998b;
-  }
-  .quote-card-inner {
-    width: 97%;
-    height: auto;
-    color: black;
-    text-align: left;
-  }
-  .flip-card {
-    margin-right: 40px;
-  }
-  .project-link:hover {
-    width: 250px;
-    height: 250px;
-    padding: 10px;
-  }
-  #footer-section {
-    height: 20vh;
-    padding-bottom: 60px;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kristy Dahlquist Portfolio</title>
+  <meta name="description" content="Explore the work of Kristy Dahlquist, a Program Manager with expertise in program management, data analysis, and community building. View her latest projects and achievements." />
+
+  <!-- Open Graph Meta Tags to show content on social media platforms -->
+  <meta property="og:title" content="Kristy Dahlquist Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Kristy Dahlquist, a Program Manager skilled in building relationships, systems, and strategies.">
+  <meta property="og:image" content="https://i.postimg.cc/6QvQCkLS/Open-Graph-OG-meta-image.png" alt="screen-shot-of-website-hero">
+  <meta property="og:url" content="https://kdahlquist.netlify.app/">
+  <meta property="og:type" content="portfolio" />
+  <meta property="og:site_name" content="Kristy Dahlquist Portfolio">
+  <!-- Robots meta tag to control search engine indexing -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/QNyPYy4Q/favicon.png">
+  <!-- Favicon for 3x resolution iPhone: -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/QNyPYy4Q/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Varela&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li>
+        <a href="#skills-section">Skills</a>
+      </li>
+      <li>
+        <a href="#social-proof-section">Social Proof</a>
+      </li>
+      <li>
+        <a href="#data-section">Data Analysis</a>
+      </li>
+      <li>
+        <a href="#html-css-section">HTML/CSS</a>
+      </li>
+      <li>
+        <a href="#javascript-section">JavaScript</a>
+      </li>
+      <li>
+        <a href="#my-picks-section">My Picks</a>
+      </li>
+      <li>
+        <a href="#social-section">Connect</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Begin mobile menu  styling-->
+  <div class="menu">
+    <input type="checkbox" id="toggle1" class="unfolder" />
+    <label for="toggle1" class="toggle-label">
+      <span class="unfold-icon">&#8801;</span><span class="fold-icon">&#8801;</span></label>
+
+    <div class="fold">
+
+      <ul>
+        <li>
+          <a href="#skills-section">Skills</a>
+        </li>
+        <li>
+          <a href="#social-proof-section">Social Proof</a>
+        </li>
+        <li>
+          <a href="#data-section">Data Analysis</a>
+        </li>
+        <li>
+          <a href="#html-css-section">HTML/CSS</a>
+        </li>
+        <li>
+          <a href="#javascript-section">JavaScript</a>
+        </li>
+        <li>
+          <a href="#my-picks-section">My Picks</a>
+        </li>
+        <li>
+          <a id="connect" href="#social-section">Connect</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="social-icon-container" id="social-mobile-container">
+      <div>
+        <a href="https://www.linkedin.com/in/kristy-dahlquist/" target="_blank">
+          <img class="social-icons" id="mobile-icons" src="https://toppng.com/uploads/preview/linkedin-color-icon-linkedin-logo-round-11562920732qctvxkrdcd.png" alt="linkedin-logo">
+        </a>
+        <a href="https://github.com/KGutie" target="_blank">
+          <img class="social-icons" id="mobile-icons" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github-logo">
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <!-- End mobile menu  styling-->
+
+  <section class="callout">
+    <h1 class="callout-text">Welcome!</h1>
+  </section>
+  <!--This is the beginning of the PROFILE section-->
+  <section>
+    <div class="section-container" id="profile-section">
+      <div class="profile-photo-frame-1" id="social-section">
+        <div class="profile-photo"></div>
+        <div class="social-icon-container">
+          <div>
+            <a href="https://www.linkedin.com/in/kristy-dahlquist/" target="_blank">
+              <img class="social-icons" src="https://toppng.com/uploads/preview/linkedin-color-icon-linkedin-logo-round-11562920732qctvxkrdcd.png" alt="linkedin-logo">
+            </a>
+            <a href="https://github.com/KGutie" target="_blank">
+              <img class="social-icons" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github-logo">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile-content-box">
+        <h2 id="name">Kristy Dahlquist</h2>
+        <h3 id="role">Program Manager</h3>
+        <p id="profile-intro-text">Nice to meet you. I love to build things: relationships, systems, processess, strategy, sandwiches— I even built this portfolio page with pure HTML/CSS. I've worked at customer-obsessed companies like REI, Okta and Auth0, so I can navigate work landscapes from the web to wilderness. <em> I'm currently working on my Project Management Professional Certification (PMP).</em> Take a look around.<br><br>Let's connect!</p>
+      </div>
+    </div>
+  </section>
+  <!--This is the beginning of the CURRENT section-->
+  <section>
+    <div class="section-container">
+      <br>
+      <h2>✱ Current Projects</h2>
+      <h5>December 2024 - January 2025, I'll be working on the following projects:</h5>
+
+      <!--This is the beginning of the card code for SaaS Landing Page Project-->
+      <div class="current-projects-section">
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/6pxSzLdD/Saa-S-landing-page.png" alt="saas-landing-page-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">There's No Place<br> Like Home Page</h1>
+                <p>Fit in? or Stand Out?</p><br>
+                <a target="_blank" class="project-link" href="https://no-place-like-home-page.netlify.app/">Click your heels</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of project card-->
+
+        <!--This is the beginning of the card code for SaaS Landing Page Project-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/qMpCPwP8/PMP-course.png" alt="pmp-course-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Project Management<br>Professional Certfication</h1>
+                <p>Get it done.</p><br>
+                <a target="_blank" class="project-link" href="https://www.pmi.org/certifications/project-management-pmp">Discover the PMI</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of project card-->
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--This is the beginning of the SKILLS section-->
+  <section>
+    <div class="section-container" id="skills-section">
+      <div class="section-title">
+        <h2>✱ Skills</h2>
+      </div>
+      <div class="flip-card-container">
+        <p id="skills">problem-solving</p>
+        <p id="skills">continuous growth</p>
+        <p id="skills">data analysis</p>
+        <p id="skills">strategic mindset</p>
+        <p id="skills">program management</p>
+        <p id="skills">project management</p>
+        <p id="skills">community building</p>
+        <p id="skills">creative</p>
+        <p id="skills">customer-obsessed</p>
+        <p id="skills">developer marketing</p>
+        <p id="skills">design thinking</p>
+        <p id="skills">systems thinking</p>
+      </div>
+    </div>
+  </section>
+
+  <!--This is the beginning of the SOCIAL PROOF section-->
+  <section>
+    <div class="section-container" id="social-proof-section">
+      <div class="section-title">
+        <h2>✱ Social Proof</h2>
+        <h5>Just a few nice things former coworkers, vendors, and managers have said about working with me.</h5>
+      </div>
+      <div class="flip-card-container" id="social-proof-container">
+        <!--This is the beginning of the card code #1.-->
+
+        <div class="quote-card">
+          <div class="quote-card-inner">
+            <h6 class="quote-text">“Kristy I and the team will miss your stellar communication, willingness to always help out and cheesy jokes, greatly. It has been great getting to work with you these past 3 years and know the SD Market is better now because of your hard work! I’m very excited for this next step in your career and wish you all the best. Congratulations!”<br><br> - Former Manager at REI Outdoor Experiences</h6>
+          </div>
+        </div>
+        <br>
+        <!--This is the beginning of the card code #2.-->
+
+        <div class="quote-card">
+          <div class="quote-card-inner">
+            <h6 class="quote-text">"You held our team together with a great mix of humor, professionalism and deep caring! Thank you for constantly seeking improvement for everything we did, holding us accountable to be great instructors, and always being willing to keep it real!"<br><br> - REI Outdoor Experiences Guide</h6>
+          </div>
+        </div>
+        <br>
+        <!--This is the beginning of the card code #3.-->
+        <div class="quote-card">
+          <div class="quote-card-inner">
+            <h6 class="quote-text">"Kristy has been one of the most reliable, organized, strategic, and friendly teammates I had in the organization. She is a proactive teammate that helps others get set up for success by using her expertise to lead, teach, and empower others. She helped build lasting relationships not only across the organization but also with external people. These relationships will have lasting impact in our work and outcomes."<br><br> - Coworker at Auth0 by Okta</h6>
+          </div>
+        </div>
+        <br>
+        <!--This is the beginning of quote #4.-->
+        <div class="quote-card">
+          <div class="quote-card-inner">
+            <h6 class="quote-text">"I worked with Kristy as part of the Developer Relations team at Auth0 by Okta. She ran the Auth0 Ambassadors program single-handedly and was a joy to work with. Kristy was always improving the program with engaging speakers, events, and more fluid communications. She's an excellent community builder and I wouldn't hesitate to work with her again!"<br><br> - Coworker at Auth0 by Okta</h6>
+          </div>
+        </div> <br>
+        <!--This is the beginning of the quote card #5.-->
+        <div class="quote-card">
+          <div class="quote-card-inner">
+            <h6 class="quote-text">"Kristy is smart, talented, and creative. She excels at creating systems and processes and is able to quickly learn new tools. We worked together to build and grow the Auth0 Ambassadors program, navigating many challenges along the way. Kristy never backed down from an obstacle and always kept the community as her first priority. She quickly garnered the support and goodwill of all of the Ambassadors as she nurtured the program and improved its day-to-day operations. <br><br>
+
+              Kristy is a world class executor. She will relentlessly pursue a task until it's complete, which she's able to accomplish through her knack for project management and her personal organization systems. In fact, Kristy became our go-to person on our team for tools and processes, first with Monday.com, then with Asana." <br><br> - Manager at Auth0 by Okta</h6>
+          </div>
+        </div>
+        <br>
+        <!--This is the beginning of the quote card #6-->
+        <div class="quote-card">
+
+          <div class="quote-card-inner">
+            <h6 class="quote-text">"Kristy and I worked together for one year at REI Adventures. In that time, Kristy was an important contributor to the team. She solved numerous elevated customer service issues, collaborated with operation vendors, domestic and international, daily, and played a big part in helping launch a new invoice system. She brought forth thoughtful ideas and a refreshing perspective that challenged the team to look at things differently. That’s a great asset to have on a team with little turnover. In addition, her success in outdoor education and leadership is extremely impressive and says a lot about her abilities. Her next employer will be lucky to have her."<br><br> - Program Manager at REI Adventures</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- This is the beginning of the DATA ANALYSIS section!-->
+  <section>
+    <div class="section-container" id="data-section">
+      <div class="section-title">
+        <h2>✱ Data Analysis</h2>
+        <h5>
+          <em>Hover over each card to flip it and learn more!</em><br><br>After completing the Google Data Analytics Professional Certification course, I opted to do the optional capstone project to practice and apply data analysis skills like preparing data, data cleaning, analysis, and data visualization, and programming with R.
+        </h5>
+      </div>
+      <div class="flip-card-container">
+        <!--This is the beginning of the card code for Bellabeat.-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/7hw5k8qy/Screenshot-2024-11-16-at-4-46-18-PM.png" alt="bellabeat-landing_page_screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Bellabeat Case Study</h1>
+                <p>Track it.</p><br>
+                <a target="_blank" class="project-link" href="https://data-analytics-case-study.netlify.app/"> Trending . . .</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--This is the beginning of the card code for second case study.-->
+
+    <!--This is the beginning of the card code for the next card. Keep the last two divs after it.-->
+  </section>
+
+  <!-- This is the HTML/CSS section-->
+  <section>
+    <div class="section-container" id="html-css-section">
+      <div class="section-title">
+        <h2>✱ HTML/CSS Projects</h2>
+        <h5>
+          <em>Hover over each card to flip it and learn more!</em><br><br>Each button links to the code. These are projects I created after taking the FreeCodeCamp HTML/CSS course, the Scrimba HTML/CSS course, and a couple of others I created on my own.
+        </h5>
+      </div>
+      <div class="flip-card-container">
+        <!--This is the beginning of the card code for Portfolio Project-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/prsZnPV8/Screenshot-2024-11-02-at-12-26-35-PM.png" alt="portfolio-page-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Portfolio</h1>
+                <p>Check it out. . .<br> wait you're already here.</p><br>
+                <a target="_blank" class="project-link" href="https://github.com/KGutie/kdahlquist-portfolio-24">See the code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for the Andy Warhol Soup Can-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/nrYwQvjP/Screenshot-2024-11-01-at-7-12-04-PM.png" alt="soup-can">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Art Inspired Challenge</h1>
+                <h4>Pure Organic HTML/CSS!</h4>
+                <p>Andy Warhol</p><br>
+                <a class="project-link" target="_blank" href="https://github.com/KGutie/css-andy-warhol-soup/tree/main">Soup is on!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for David S. Pumpkins
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.ibb.co/72ZfRv8/Screen-Shot-2022-01-20-at-5-10-28-PM.png" alt="tribute-page-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Tribute Page</h1>
+                <p>David S. Pumpkins</p><br>
+                <a target="_blank" class="project-link" href="https://codepen.io/K_Gutierrez/pen/MWvjErX"> Any Questions?</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!--This is the beginning of the card code for the Recipe Card
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/bNB0cz6D/Screenshot-2024-11-02-at-12-36-11-PM.png" alt="recipe-card-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Recipe Card</h1>
+                <p>Did someone say spaghetti?</p><br>
+                <a class="project-link" target="_blank" href="https://codepen.io/K_Gutierrez/pen/Rwjypdp">Make it.</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!--This is the beginning of the card code for the Haiku Form-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.ibb.co/BcQX9Gn/Screen-Shot-2022-01-20-at-5-00-23-PM.png" alt="haiku-form-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Form</h1>
+                <p>Haiku For You</p><br>
+                <a class="project-link" target="_blank" href="https://codepen.io/K_Gutierrez/full/LYjxzeg">Styling the 5-7-5</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for the Product Landing Page-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.ibb.co/d7tS51J/Screen-Shot-2022-01-20-at-4-59-33-PM.png" alt="product-landing-page-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Product Landing Page</h1>
+                <p>Surf Shop</p><br>
+                <a class="project-link" target="_blank" href="https://codepen.io/K_Gutierrez/pen/BadqMgP">Ready to Catch a Wave?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for the technical documentation page-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.ibb.co/4fF4s3S/Screen-Shot-2022-01-20-at-4-51-19-PM.png" alt="technical-documentation-page-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Technical <br> Documentation</h1>
+                <p>Let's flip the track</p><br>
+                <a id="project-link" class="project-link" target="blank" href="https://codepen.io/K_Gutierrez/details/bGoENNK">This is how we do it.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for the Smile Button
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/nLNMrBGt/Screenshot-2024-11-02-at-11-58-08-AM.png" alt="button-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Button</h1>
+                <p>Push for Happy</p><br>
+                <a class="project-link" target="_blank" href="https://codepen.io/K_Gutierrez/pen/oNpzYrz">☹︎ ⇢ ☺︎</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!--This is the beginning of the card code for the next card. Keep the last two divs after it.-->
+      </div>
+    </div>
+  </section>
+
+  <!-- This is the beginning of the JAVASCRIPT Section -->
+  <section>
+    <div class="section-container" id="javascript-section">
+      <div class="section-title">
+        <h2>✱ JavaScript Projects</h2>
+        <h5><em>Hover over each card to flip it and learn more.</em><br><br>I created these projects while taking the Scrimba JavaScript course.</h5>
+      </div>
+
+      <div class="flip-card-container">
+        <!--This is the beginning of the card code for the Wave Counter.-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/nLB5JbVx/Screenshot-2024-11-01-at-1-28-01-PM.png" alt="wave-counter-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Wave Counter</h1>
+                <p>The more the saltier.</p><br>
+                <a target="_blank" class="project-link" href="https://app.netlify.com/sites/splendid-cactus-f0b49d/overview">Waves for Days</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for the Random Password Generator.-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/wjK7BLcp/Screenshot-2024-11-01-at-1-27-00-PM.png" alt="password-generator-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Random Password Generator</h1>
+                <p>Same P@$sw0rD Twice. Think Again.</p><br>
+                <a class="project-link" target="_blank" href="https://heroic-cupcake-d856a4.netlify.app/">Randomize!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for the Score Board.-->
+        <div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="project-img" src="https://i.postimg.cc/WpG27C0Q/Screenshot-2024-11-01-at-1-20-29-PM.png" alt="scoreboard-screenshot">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="project-title">Score Board</h1>
+                <p>Who's Keeping Count Anyway?</p><br>
+                <a class="project-link" target="_blank" href="https://tubular-profiterole-b73102.netlify.app/">Score Board</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--This is the beginning of the card code for the next card. Keep the last two divs after it.-->
+      </div>
+    </div>
+  </section>
+  <!--My Picks Section -->
+  <section>
+    <div class="section-container" id="my-picks-section">
+      <div class="section-title">
+        <h2>✱ My Picks </h2>
+        <h5>Podcasts, books, and more.</h5>
+        <div>
+        </div>
+        <div class="flip-card-container">
+          <!--Code to Market Podcast here-->
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <iframe class="project-img" src="https://open.spotify.com/embed/episode/4JJpYJOaTh0oYz0HXyytfS/video?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--Advocu Podcast here-->
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <iframe class="project-img" src="https://open.spotify.com/embed/episode/0lI067NJR6OSTqpxqqYAWL?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--Scrimba Site here-->
+          <div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <iframe class="project-img" src="https://www.youtube.com/embed/vvs6o981Iqg?si=tNxrxfZnaVu6s_Y6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+          <!--This is the beginning of the card code for the next card. Keep the last three divs after it.-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer Section-->
+  <section>
+    <div class="section-container" id="footer-section">
+      <p class="footer-text">P.S. I designed and created this portfolio page using tools like codepen.io, Github, coolors.co and Netlify! <br><br> If you have ideas for improvement, please submit a pull request <a id="pull-request-link" target="_blank" href="https://github.com/KGutie/kdahlquist-portfolio-24"><b>here</b>.</a></p>
+    </div>
+    <p class="last-updated-text"><em>Last updated December 2024 by K.Dahlquist</em></p>
+  </section>
+</body>
+
+</html>
