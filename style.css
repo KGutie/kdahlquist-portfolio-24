@@ -549,6 +549,7 @@ iframe {
   padding: 20px;
   margin: auto;
   text-align: center;
+  color: black;
 }
 
 #pull-request-link:hover {
@@ -635,5 +636,8 @@ iframe {
   #footer-section {
     height: 20vh;
     padding-bottom: 60px;
+  }
+  .last-updated-text {
+    color: #c5d86d;
   }
 }
