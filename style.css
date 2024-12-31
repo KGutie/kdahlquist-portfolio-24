@@ -8,6 +8,7 @@ body {
   font-family: "Varela", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
 }
 
 /* Links and text styling */
@@ -19,18 +20,12 @@ a {
 p,
 h3 {
   padding: 5px 10px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 h2 {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 30px;
   width: auto;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -41,16 +36,10 @@ h5 {
   margin: 10px 20px;
   padding: 10px;
   border-radius: 5px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   width: auto;
 }
 
 h6 {
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   width: auto;
   padding: 0px 5px;
   font-size: 14px;
@@ -84,14 +73,10 @@ li {
   color: #c5d86d;
   text-align: bottom;
   text-decoration: none;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   margin: 5px 10px;
 }
 
-.navbar a:hover {
-  height: 20px;
+a:hover {
   margin-top: 5px;
   width: auto;
   color: #fff9ec;
@@ -117,9 +102,11 @@ li {
   color: black;
 }
 
-/* Styling for mobile nav menu /*
+/* Styling for mobile nav menu 
 /*Code for toggle styling */
+
 .menu {
+  display: inline-block;
   padding-left: 0px;
   overflow: visible;
   position: fixed;
@@ -127,16 +114,18 @@ li {
   width: 100%;
   opacity: 95%;
   height: 55px;
-  z-index: 10;
+  z-index: 9;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-#social-mobile-container { /* Styling for social icons in mobile  menu */ 
-  display: flex;
-  justify-content: flex-end;
-  margin-top: -35px;
-  margin-right: 20px;
+/*Navbar social icons */
+#social-mobile-container {
+  /* Styling for social icons in mobile  menu */
+  margin-top: 13px;
+  margin-right: 44px;
+  float: right;
+  padding: 2px 2px 0px 2px;
 }
 
 #mobile-icons {
@@ -147,33 +136,27 @@ li {
 
 .fold {
   display: inline;
-  width: 100px;
   margin-top: -50px;
-  width: 40vw;
+  width: 80vw;
   height: auto;
   background-color: #fff9ec;
-  padding: 20px;
+  padding: 20px 20px 20px 40px;
   border-radius: 5px;
   word-wrap: break-word;
   box-decoration-break: clone;
   border: none;
 }
 
-.fold a,
-#connect {
+.fold a {
   display: flex;
   flex-direction: column;
   color: #1b998b;
   text-decoration: none;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   margin-left: -50px;
   padding: 10px;
 }
 
-.fold a:hover,
-#connect:hover {
+.fold a:hover {
   height: 20px;
   width: auto;
   color: black;
@@ -192,15 +175,11 @@ li {
 .toggle-label {
   display: inline-block;
   cursor: pointer;
-  font-size: 14px;
-  margin-top: -10px;
-  width: 65vw;
-  height: 50px;
-  color: #c5d86d;
-  text-decoration: none;
-  font-family: "Varela", sans-serif;
   font-size: 40px;
-  font-style: normal;
+  margin-top: -10px;
+  width: auto;
+  height: auto;
+  color: #c5d86d;
 }
 
 .unfold-icon,
@@ -214,15 +193,22 @@ li {
 }
 .unfolder ~ label .fold-icon {
   display: none;
+  color: #1b998b;
 }
 
 .unfolder:checked ~ .fold {
   display: block;
 }
-.unfolder:checked ~ label .fold-icon {
-  display: inline-block;
+
+.unfolder:checked ~ #social-mobile-container {
+  display: none;
 }
-.unfolder:checked ~ label .unfold-icon {
+
+.unfolder:checked ~ label .fold-icon {
+  display: inline;
+}
+.unfolder:checked ~ label .unfold-icon,
+#connect {
   display: none;
 }
 
@@ -523,9 +509,6 @@ iframe {
   border-radius: 10px;
   height: 300px;
   width: 300px;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
@@ -571,9 +554,6 @@ iframe {
 
 .footer-text {
   text-align: left;
-  font-family: "Varela", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   width: auto;
   height: 30vh;
   padding: 10px 20px 10px 20px;
@@ -598,7 +578,7 @@ iframe {
 /* Media queries to hide dropdown menu on large screens */
 @media screen and (min-width: 481px) {
   .menu {
-    display: none;
+    visibility: hidden;
   }
 }
 
