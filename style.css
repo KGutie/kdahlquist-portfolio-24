@@ -137,7 +137,7 @@ a:hover {
   margin-top: -50px;
   width: 80vw;
   height: auto;
-  background-color: #fff9ec;
+  background-color: #fefbf4;
   padding: 20px 20px 20px 40px;
   border-radius: 5px;
   word-wrap: break-word;
@@ -213,7 +213,7 @@ a:hover {
 /* Callout styling */
 .callout {
   position: relative;
-  background-color: #fff9ec;
+  background-color: #fefbf4;
   border-radius: 5px;
   border: 5px solid #1b998b;
   text-align: center;
@@ -615,7 +615,7 @@ iframe {
   }
   .profile-content-box {
     height: auto;
-    background: #fff9ec;
+    background: #fefbf4;
     animation: none;
     margin-top: 30px;
     margin-bottom: 0px;
