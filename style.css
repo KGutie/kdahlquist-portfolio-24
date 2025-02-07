@@ -303,7 +303,7 @@ a:hover {
   background: linear-gradient(to left, #c5d86d, #1b998b);
   width: 700px;
   max-width: 765px;
-  height: 275px;
+  height: 375px;
   padding: 5px;
   margin: 45px 5px 10px 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
@@ -432,6 +432,7 @@ a:hover {
 }
 
 /*This is for the media in the "My Picks" section */
+
 iframe {
   margin: auto;
   border-radius: 5px;
