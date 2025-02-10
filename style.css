@@ -394,6 +394,7 @@ a:hover {
 .current-projects-section {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -476,23 +477,28 @@ a:hover {
 .project-img {
   margin: auto;
   border-radius: 5px;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 
 /*This is for the media in the "My Picks" section */
-
 iframe {
   margin: auto;
   border-radius: 5px;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
+}
+
+#html-css-section {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .flip-card {
   background: transparent;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border: none;
   margin: 30px;
   perspective: 1000px;
@@ -529,8 +535,8 @@ iframe {
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 5px;
   padding: 5px;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
 }
 
 /* Style the back side */
@@ -539,26 +545,27 @@ iframe {
   color: #fff9ec;
   transform: rotateY(180deg);
   border-radius: 10px;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .flip-card-back h1 {
-  padding-top: 55px;
+  padding-top: 5px;
   font-family: "Amatic SC", serif;
   font-weight: 800;
   font-style: normal;
   font-size: 30px;
+  margin: 15px 5px 5px 15px;
 }
 
 .project-link {
   text-decoration: none;
   background-color: #fff9ec;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: -20px;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
@@ -566,7 +573,7 @@ iframe {
 
 .project-link:hover {
   background: #fff9ec;
-  padding: 13px;
+  padding: 8px;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
