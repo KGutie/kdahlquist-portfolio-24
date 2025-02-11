@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(180deg, #fff9ec 0%, gray 51%, black 85%);
+   background: linear-gradient(180deg, #fff9ec 0%, gray 51%, black 85%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -303,7 +303,7 @@ a:hover {
   background: linear-gradient(to left, #c5d86d, #1b998b);
   width: 700px;
   max-width: 765px;
-  height: 375px;
+  height: 300px;
   padding: 5px;
   margin: 45px 5px 10px 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
