@@ -1,5 +1,5 @@
 body {
-   background: linear-gradient(180deg, #fff9ec 0%, gray 51%, black 85%);
+  background: linear-gradient(180deg, #fff9ec 0%, gray 51%, black 85%);
   width: 100%;
   height: 100%;
   display: flex;
@@ -101,8 +101,7 @@ a:hover {
   opacity: 95%;
   height: 55px;
   z-index: 9;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 /*Navbar social icons */
@@ -256,12 +255,11 @@ a:hover {
   animation: shimmer 4s infinite linear;
   padding: 5px;
   margin: 45px 5px 10px 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .profile-photo {
-  background-image: url("https://i.ibb.co/rQXdvC7/DSC-0196.jpg"); /*intial background image */
+  background-image: url("https://i.postimg.cc/g2P916Jd/KG-Profile-2024.jpg"); /*intial background image */
   height: 255px;
   width: 255px;
   padding-top: 0px;
@@ -289,8 +287,7 @@ a:hover {
 .social-icons {
   border-radius: 150px;
   border: 3px solid #c5d86d;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   height: 40px;
   width: 40px;
   margin: 2px;
@@ -306,8 +303,7 @@ a:hover {
   height: 300px;
   padding: 5px;
   margin: 45px 5px 10px 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   animation: grow 2.5s 4s 1;
   font-size: 14px;
 }
@@ -356,8 +352,7 @@ a:hover {
   width: 90vw;
   max-width: 1000px;
   height: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 5px;
 }
 
@@ -387,8 +382,7 @@ a:hover {
   padding: 5px 10px;
   margin: 10px;
   text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .current-projects-section {
@@ -409,8 +403,6 @@ a:hover {
   background: #c5d86d;
   border-radius: 5px;
   font-weight: bold;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .ribbon {
@@ -437,8 +429,7 @@ a:hover {
   color: black;
   text-align: center;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .slide-button:visited {
@@ -456,8 +447,7 @@ a:hover {
   width: 90vw;
   max-width: 1000px;
   height: 350px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 5px;
 }
 
@@ -470,8 +460,7 @@ a:hover {
   max-width: 1000px;
   margin: 10px 20px;
   height: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .quote-card-inner {
@@ -545,8 +534,7 @@ iframe {
 .flip-card-front {
   background: linear-gradient(to left, #c5d86d, #1b998b);
   color: black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 5px;
   padding: 5px;
   height: 250px;
@@ -566,8 +554,7 @@ iframe {
   border-radius: 10px;
   height: 250px;
   width: 250px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 /* Title text on the back of the flip card */
 .flip-card-back h1 {
@@ -586,8 +573,7 @@ iframe {
   border-radius: 5px;
   margin-top: -30px;
   color: black;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .project-link:hover {
@@ -604,8 +590,7 @@ iframe {
   margin: 20px auto;
   width: 90vw;
   height: 10vh;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 5px;
 }
 
