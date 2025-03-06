@@ -62,7 +62,7 @@ li {
   margin: 5px 10px;
 }
 
-a:hover {
+.navbar a:hover {
   margin-top: 5px;
   width: auto;
   color: #fff9ec;
