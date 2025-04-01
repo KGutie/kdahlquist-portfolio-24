@@ -56,7 +56,7 @@ li {
 .navbar a {
   float: left;
   display: inline;
-  color: #c5d86d;
+  color: #dbfb63;
   text-align: bottom;
   text-decoration: none;
   margin: 5px 10px;
@@ -70,13 +70,13 @@ li {
   text-align: center;
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #1b998b;
+  text-decoration-color: #dbfb63;
   text-underline-offset: 5px;
 }
 
 #connect {
   color: #1b998b;
-  border: 1px solid #c5d86d;
+  border: 1px solid #dbfb63;
   border-radius: 5px;
   padding: 5px;
   margin: 0px;
@@ -84,7 +84,7 @@ li {
 
 #connect:hover {
   text-decoration: none;
-  background: linear-gradient(to left, #c5d86d 20%, #1b998b 50%);
+  background: linear-gradient(to left, #dbfb63 20%, #1b998b 50%);
   color: black;
 }
 
@@ -116,7 +116,7 @@ li {
 #mobile-icons {
   width: 25px;
   height: 25px;
-  border: 2px solid #c5d86d;
+  border: 2px solid #dbfb63;
 }
 
 .fold {
@@ -135,7 +135,7 @@ li {
 .fold a {
   display: flex;
   flex-direction: column;
-  color: #1b998b;
+  color: black;
   text-decoration: none;
   margin-left: -50px;
   padding: 10px;
@@ -149,7 +149,7 @@ li {
   text-align: center;
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #c5d86d;
+  text-decoration-color: #3bcfd4;
   text-underline-offset: 5px;
 }
 
@@ -164,12 +164,12 @@ li {
   margin-top: -10px;
   width: auto;
   height: auto;
-  color: #c5d86d;
+  color: #dbfb63;
 }
 
 .unfold-icon,
 .fold-icon {
-  color: #c5d86d;
+  color: #dbfb63;
   padding: 10px;
   display: inline-block;
 }
@@ -178,7 +178,7 @@ li {
 }
 .unfolder ~ label .fold-icon {
   display: none;
-  color: #1b998b;
+  color: #3bcfd4;
 }
 
 .unfolder:checked ~ .fold {
@@ -202,7 +202,7 @@ li {
   position: relative;
   background-color: white;
   border-radius: 5px;
-  border: 5px solid #1b998b;
+  border: 5px solid #3bcfd4;
   text-align: center;
   padding: 0 0 20px 0;
   margin: 120px auto 20px auto;
@@ -219,7 +219,7 @@ li {
   left: 60px;
   border-width: 55px 15px 50px 10px;
   border-style: solid;
-  border-color: #1b998b transparent transparent transparent;
+  border-color: #3bcfd4 transparent transparent transparent;
 }
 
 .callout-text {
@@ -247,7 +247,7 @@ li {
 
 .profile-photo-frame-1 {
   border-radius: 5px;
-  background: linear-gradient(45deg, #c5d86d 20%, #1b998b 50%, #c5d86d 60%);
+  background: linear-gradient(45deg, #dbfb63 20%, #3bcfd4 50%, #dbfb63 60%);
   background-size: 300%;
   background-position-x: 200%;
   height: 255px;
@@ -286,7 +286,7 @@ li {
 }
 .social-icons {
   border-radius: 150px;
-  border: 3px solid #c5d86d;
+  border: 3px solid #3bcfd4;
   background: #34444c;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   height: 40px;
@@ -298,13 +298,13 @@ li {
 
 .profile-content-box {
   border-radius: 5px;
-  background: linear-gradient(to left, #c5d86d, #1b998b);
+
   width: 700px;
   max-width: 765px;
   height: 300px;
   padding: 5px;
   margin: 45px 5px 10px 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
   animation: grow 2.5s 4s 1;
   font-size: 14px;
 }
@@ -326,10 +326,10 @@ li {
   font-weight: bold;
   font-size: 40px;
   font-style: normal;
-  color: #fff9ec;
+  color: #3bcfd4;
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #c5d86d;
+  text-decoration-color: #dbfb63;
   text-underline-offset: 5px;
 }
 
@@ -377,7 +377,7 @@ li {
 }
 /* List of skills styling*/
 #skills {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
+  background: #3bcfd4;
   width: 185px;
   border-radius: 5px;
   padding: 5px 10px;
@@ -401,7 +401,7 @@ li {
   padding: 5px;
   color: black;
   text-align: center;
-  background: #c5d86d;
+  background: #dbfb63;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -428,6 +428,7 @@ li {
   margin: 5px 2.5px;
   padding: 8px;
   color: black;
+  background: #3bcfd4;
   text-align: center;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
@@ -453,7 +454,7 @@ li {
 }
 
 .quote-card {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #dbfb63, #3bcfd4);
   color: black;
   border-radius: 5px;
   padding: 5px 10px;
@@ -533,7 +534,7 @@ iframe {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background: linear-gradient(to left, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #dbfb63, #3bcfd4);
   color: black;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   border-radius: 5px;
@@ -549,7 +550,7 @@ iframe {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to left, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #dbfb63, #3bcfd4);
   color: #fff9ec;
   transform: rotateY(180deg);
   border-radius: 10px;
@@ -578,7 +579,7 @@ iframe {
 }
 
 .project-link:hover {
-  background: #c5d86d;
+  background: #dbfb63;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -586,7 +587,7 @@ iframe {
 
 #footer-section {
   /*This is to adjust size of this section.*/
-  background: linear-gradient(to left, #c5d86d, #1b998b);
+  background: linear-gradient(to left, #dbfb63, #3bcfd4);
   padding: 20px 0px 50px 0px;
   margin: 20px auto;
   width: 90vw;
@@ -614,7 +615,7 @@ iframe {
 #pull-request-link:hover {
   text-decoration-line: underline;
   text-decoration-style: wavy;
-  text-decoration-color: #f08080;
+  text-decoration-color: #3bcfd4;
   text-underline-offset: 5px;
   font-weight: 600;
 }
@@ -650,14 +651,8 @@ iframe {
     padding: 5px;
   }
 
-  #connect:hover {
-    text-decoration: none;
-    background: linear-gradient(to left, #c5d86d 20%, #1b998b 50%);
-    color: black;
-  }
-
   #role {
-    color: black;
+    color: #3bcfd4;
   }
   .profile-content-box {
     height: auto;
@@ -675,9 +670,7 @@ iframe {
     padding: 10px 20px;
     font-size: 14px;
   }
-  #profile-intro-text {
-    color: #1b998b;
-  }
+
   .quote-card-inner {
     width: 97%;
     height: auto;
@@ -697,6 +690,6 @@ iframe {
     padding-bottom: 60px;
   }
   .last-updated-text {
-    color: #c5d86d;
+    color: #dbfb63;
   }
 }
