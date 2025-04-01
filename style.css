@@ -538,7 +538,7 @@ iframe {
   align-items: center;
   justify-content: center;
   background: linear-gradient(to left, #dbfb63, #3bcfd4);
-  color: #fff9ec;
+  color: black;
   transform: rotateY(180deg);
   border-radius: 10px;
   height: 250px;
