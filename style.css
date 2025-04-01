@@ -245,21 +245,8 @@ li {
   box-shadow: none;
 }
 
-.profile-photo-frame-1 {
-  border-radius: 5px;
-  background: linear-gradient(45deg, #dbfb63 20%, #3bcfd4 50%, #dbfb63 60%);
-  background-size: 300%;
-  background-position-x: 200%;
-  height: 255px;
-  width: 255px;
-  animation: shimmer 4s infinite linear;
-  padding: 5px;
-  margin: 45px 5px 10px 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-}
-
 .profile-photo {
-  background-image: url("https://i.postimg.cc/g2P916Jd/KG-Profile-2024.jpg"); /*intial background image */
+  background-image: url(https://i.postimg.cc/MTrWg6P3/Kristy-outline-profile.png); /*intial background image */
   height: 255px;
   width: 255px;
   padding-top: 0px;
@@ -269,7 +256,7 @@ li {
   transition: background-image 0.5s ease-in-out; /* Smooth transition */
 }
 .profile-photo:hover {
-  background-image: url("https://i.postimg.cc/SsF1Cg4W/8bit-me-favicon-full-size.png");
+  background-image: url("https://i.postimg.cc/tJb43qTs/Kristy-outline-profile-blue.png");
 }
 
 @keyframes shimmer {
@@ -281,8 +268,8 @@ li {
 /*contains the social icons*/
 .social-icon-container {
   display: block;
-  margin-top: -20px;
-  margin-left: 10px;
+  margin-top: 0px;
+  margin-left: 37px;
 }
 .social-icons {
   border-radius: 150px;
@@ -291,7 +278,7 @@ li {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
   height: 40px;
   width: 40px;
-  margin: 2px;
+  margin: 5px;
 }
 
 /*This is the container that holds the text and graphics inside of current projects div*/
