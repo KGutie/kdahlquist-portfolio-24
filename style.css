@@ -648,7 +648,10 @@ iframe {
     margin-top: 30px;
     margin-bottom: 0px;
   }
-  .quote-card {
+  .profile-photo {
+     background-image: url(https://i.postimg.cc/d17wHdYf/Kristy-outline-profile-white.png); 
+  }
+     .quote-card {
     height: auto;
     width: 80vw;
     margin-top: 20px;
