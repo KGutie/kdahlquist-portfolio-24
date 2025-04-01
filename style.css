@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(180deg, #fff9ec 0%, gray 51%, black 85%);
+  background: white;
   width: 100%;
   height: 100%;
   display: flex;
@@ -200,7 +200,7 @@ li {
 /* Callout styling */
 .callout {
   position: relative;
-  background-color: #fefbf4;
+  background-color: white;
   border-radius: 5px;
   border: 5px solid #1b998b;
   text-align: center;
@@ -347,7 +347,7 @@ li {
 
 /* This is the large white container that holds the content in all sections below the PROFILE section. */
 .section-container {
-  background-color: #fefbf4;
+  background-color: #f2f2f2;
   padding-bottom: 30px;
   margin: 15px 10px;
   width: 90vw;
@@ -442,7 +442,7 @@ li {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  background-color: #fefbf4;
+  background-color: #f2f2f2;
   padding-bottom: 30px;
   margin: 15px 10px;
   width: 90vw;
@@ -468,7 +468,7 @@ li {
   /*the white box on the social proof section*/
   position: sticky;
   top: 0;
-  background: #fff9ec;
+  background: white;
   width: 99%;
   height: auto;
   padding: 5px 5px;
