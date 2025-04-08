@@ -256,7 +256,7 @@ li {
   transition: background-image 0.5s ease-in-out; /* Smooth transition */
 }
 .profile-photo:hover {
-  background-image: url("https://i.postimg.cc/tJb43qTs/Kristy-outline-profile-blue.png");
+  background-image: url("https://i.postimg.cc/WpfKqxdd/New-Profile-Hello.png");
 }
 
 @keyframes shimmer {
