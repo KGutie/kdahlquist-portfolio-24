@@ -74,20 +74,6 @@ li {
   text-underline-offset: 5px;
 }
 
-#connect {
-  color: #1b998b;
-  border: 1px solid #dbfb63;
-  border-radius: 5px;
-  padding: 5px;
-  margin: 0px;
-}
-
-#connect:hover {
-  text-decoration: none;
-  background: linear-gradient(to left, #dbfb63 20%, #1b998b 50%);
-  color: black;
-}
-
 /* Styling for mobile nav menu 
 /*Code for toggle styling */
 
@@ -206,24 +192,26 @@ li {
   text-align: center;
   padding: 0 0 20px 0;
   margin: 120px auto 20px auto;
-  width: 300px;
-  height: 80px;
+  width: 170px;
+  height: 60px;
   color: #333;
 }
 
 .callout::after {
   content: "";
   position: absolute;
-  bottom: -105px;
+  bottom: -90px;
+  transform: rotate(35deg);
   /* Position the tail below the callout */
-  left: 60px;
+  left: 80px;
   border-width: 55px 15px 50px 10px;
   border-style: solid;
   border-color: #3bcfd4 transparent transparent transparent;
+  z-index: -1;
 }
 
 .callout-text {
-  margin: 30px auto 0px auto;
+  margin: 15px auto 0px auto;
   font-family: "Amatic SC", serif;
   font-weight: 800;
   font-size: 40px;
@@ -392,6 +380,7 @@ li {
   background: #dbfb63;
   border-radius: 5px;
   font-weight: bold;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .ribbon {
@@ -419,7 +408,6 @@ li {
   background: #3bcfd4;
   text-align: center;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .slide-button:visited {
@@ -468,14 +456,6 @@ li {
 
 /* the rest of the project card styling */
 .project-img {
-  margin: auto;
-  border-radius: 5px;
-  width: 250px;
-  height: 250px;
-}
-
-/*This is for the media in the "My Picks" section */
-iframe {
   margin: auto;
   border-radius: 5px;
   width: 250px;
@@ -600,7 +580,7 @@ iframe {
   color: black;
 }
 
-#pull-request-link:hover {
+#pull-request-link {
   text-decoration-line: underline;
   text-decoration-style: wavy;
   text-decoration-color: #3bcfd4;
