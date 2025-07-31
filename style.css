@@ -380,7 +380,7 @@ li {
   background: #dbfb63;
   border-radius: 5px;
   font-weight: bold;
-   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 .ribbon {
@@ -399,7 +399,7 @@ li {
 }
 
 #sneak-peak {
-  background-color: #FF6B6B;
+  background-color: #ff6b6b;
 }
 
 .slide-button:hover {
@@ -530,6 +530,7 @@ li {
   width: 250px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
+
 /* Title text on the back of the flip card */
 .flip-card-back h1 {
   font-family: "Amatic SC", serif;
