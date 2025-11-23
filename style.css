@@ -235,7 +235,7 @@ li {
 
 .profile-photo {
   /*background-image: url(https://i.postimg.cc/MTrWg6P3/Kristy-outline-profile.png); /*intial background image */
-  background-image: url(https://i.postimg.cc/WpfKqxdd/New-Profile-Hello.png);
+  background-image: url(https://i.postimg.cc/CLqHPF7x/full-color-KD-profile.png);
   height: 255px;
   width: 255px;
   padding-top: 0px;
@@ -245,7 +245,7 @@ li {
   transition: background-image 0.5s ease-in-out; /* Smooth transition */
 }
 .profile-photo:hover {
-  background-image: url(https://i.postimg.cc/7hV8dr03/blue-profile-sparkles.png);
+  background-image: url(https://i.postimg.cc/zBy0qTCb/blue-KD-profile-png.png);
 }
 
 @keyframes shimmer {
